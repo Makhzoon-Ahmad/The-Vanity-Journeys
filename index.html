@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Vanity Journeys – Explore Kashmir & Beyond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <!-- <a href="#" class="nav-logo"></a> -->
+      <img
+        src="./assets/images/vanityLogo.jpeg"
+        alt="Vanity Journeys Logo"
+        class="nav-logo"
+      />
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li class="nav-dropdown">
+          <a href="#destinations">Destinations</a>
+          <div class="dropdown-menu">
+            <a href="#">Srinagar</a>
+            <a href="#">Gulmarg</a>
+            <a href="#">Pahalgam</a>
+            <a href="#">Doodhpathri</a>
+            <a href="#">Sonmarg</a>
+            <a href="#">Gurez</a>
+            <a href="#">Dal Lake</a>
+            <a href="#">Leh – Ladakh</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="#">Packages</a>
+          <div class="dropdown-menu">
+            <a href="#">Kashmir Explorer</a>
+            <a href="#">Honeymoon Special</a>
+            <a href="#">Adventure Package</a>
+          </div>
+        </li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#cta" class="nav-cta">Book Now</a></li>
+      </ul>
+      <!-- <div class="nav-contact">
+    <span><i class="fa fa-phone" style="margin-right:5px;font-size:.8rem;"></i><a href="tel:+917006675853">+91 70066 75853</a></span>
+  </div> -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg">
+        <!-- <img src="./assets/images/tour-image.jpeg" alt="Kashmir landscape" loading="lazy"/> -->
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-badge">✦ Kashmir &amp; Beyond ✦</div>
+        <h1>Explore. Experience.<br /><em>Create Memories.</em></h1>
+        <p>
+          Discover the breathtaking beauty of Kashmir with tailor-made travel
+          experiences crafted just for you.
+        </p>
+        <div class="hero-buttons">
+          <a href="#destinations" class="btn-primary">View Packages</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ENQUIRY STRIP -->
+    <div class="enquiry-strip">
+      <p><strong>Quick Enquiry</strong> – Tell us where you want to go</p>
+      <div class="enquiry-form">
+        <input type="text" placeholder="Your name" />
+        <input type="tel" placeholder="Phone number" />
+        <select>
+          <option value="" disabled selected>Select destination</option>
+          <option>Srinagar</option>
+          <option>Gulmarg</option>
+          <option>Pahalgam</option>
+          <option>Doodhpathri</option>
+          <option>Sonmarg</option>
+          <option>Gurez</option>
+          <option>Dal Lake</option>
+          <option>Leh – Ladakh</option>
+        </select>
+        <button type="button">Send Enquiry</button>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-images fade-in">
+          <div class="about-img-main">
+            <img
+              src="./assets/images/about-img.jpeg"  alt="Kashmir Valley"
+            />
+          </div>
+          <div class="about-img-accent">
+            <img
+              src="./assets/images/about-img-main.jpeg"
+              alt="Ladakh"
+            />
+          </div>
+        </div>
+        <div class="about-content fade-in">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">Your Trusted Travel Partner in Kashmir</h2>
+          <p>
+            At <strong>The Vanity Journeys</strong>, we believe travel is more
+            than just reaching a destination. It's about creating lasting
+            memories. Based in the heart of Srinagar, we offer carefully curated
+            tours that bring out the very best of Kashmir.
+          </p>
+          <p>
+            From the snow-capped peaks of Gulmarg to the serene waters of Dal
+            Lake, we handle every detail so you can focus on the experience.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fa fa-map-marked-alt"></i>
+              </div>
+              <div>
+                <h4>Customized Itineraries</h4>
+                <p>Every trip is tailored to your preferences and budget.</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <i class="fa fa-headset"></i>
+              </div>
+              <div>
+                <h4>24/7 Support</h4>
+                <p>Our team is always available during your journey.</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fa fa-star"></i></div>
+              <div>
+                <h4>Local Expertise</h4>
+                <p>Deep knowledge of Kashmir's hidden gems and best stays.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Tours Completed</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-num">8</div>
+          <div class="stat-label">Tour Destinations</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section id="destinations">
+      <div class="section-header center fade-in">
+        <div class="section-tag">Explore</div>
+        <h2 class="section-title">Our Tour Destinations</h2>
+        <p class="section-sub">
+          From Himalayan meadows to ancient valleys, each destination offers a
+          unique story waiting to be lived.
+        </p>
+      </div>
+      <div class="destinations-grid">
+        <div class="dest-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=900&q=80"
+            alt="Dal Lake"
+          />
+          <div class="dest-overlay">
+            <div class="dest-name">Dal Lake</div>
+            <div class="dest-tag">Srinagar · Shikara Rides · Houseboats</div>
+          </div>
+          <div class="dest-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="dest-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?w=600&q=80"
+            alt="Gulmarg"
+          />
+          <div class="dest-overlay">
+            <div class="dest-name">Gulmarg</div>
+            <div class="dest-tag">Snow · Gondola · Skiing</div>
+          </div>
+          <div class="dest-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="dest-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80"
+            alt="Pahalgam"
+          />
+          <div class="dest-overlay">
+            <div class="dest-name">Pahalgam</div>
+            <div class="dest-tag">Valley of Shepherds · River · Trekking</div>
+          </div>
+          <div class="dest-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="dest-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1566837945700-30057527ade0?w=600&q=80"
+            alt="Sonmarg"
+          />
+          <div class="dest-overlay">
+            <div class="dest-name">Sonmarg</div>
+            <div class="dest-tag">Meadow of Gold · Glacier Treks</div>
+          </div>
+          <div class="dest-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="dest-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=900&q=80"
+            alt="Leh Ladakh"
+          />
+          <div class="dest-overlay">
+            <div class="dest-name">Leh – Ladakh</div>
+            <div class="dest-tag">High Altitude · Monasteries · Pangong</div>
+          </div>
+          <div class="dest-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="dest-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?w=600&q=80"
+            alt="Srinagar"
+          />
+          <div class="dest-overlay">
+            <div class="dest-name">Srinagar</div>
+            <div class="dest-tag">
+              Mughal Gardens · Old City · Floating Market
+            </div>
+          </div>
+          <div class="dest-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="dest-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+            alt="Doodhpathri"
+          />
+          <div class="dest-overlay">
+            <div class="dest-name">Doodhpathri</div>
+            <div class="dest-tag">Milky Valley · Alpine Meadows</div>
+          </div>
+          <div class="dest-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="dest-card fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1625467096769-ac4a8c4f4e56?w=600&q=80"
+            alt="Gurez"
+          />
+          <div class="dest-overlay">
+            <div class="dest-name">Gurez</div>
+            <div class="dest-tag">Remote Valley · Habba Khatoon Peak</div>
+          </div>
+          <div class="dest-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="section-header center fade-in">
+        <div class="section-tag">What We Offer</div>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-sub">
+          Everything you need for a perfect Kashmir trip, handled end-to-end.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fa fa-route"></i></div>
+          <h3>Tour Packages</h3>
+          <p>
+            Hand-crafted itineraries for every type of traveler — adventure
+            seekers, honeymooners, families, and solo explorers.
+          </p>
+          <a href="#" class="service-link"
+            >Explore packages <i class="fa fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fa fa-map-pin"></i></div>
+          <h3>Destination Tours</h3>
+          <p>
+            Guided day tours and multi-day excursions to Kashmir's most
+            spectacular locations with expert local guides.
+          </p>
+          <a href="#destinations" class="service-link"
+            >View destinations <i class="fa fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fa fa-hotel"></i></div>
+          <h3>Hotel Booking</h3>
+          <p>
+            Carefully selected hotels, houseboats, and resorts across Kashmir —
+            from budget-friendly to luxury stays.
+          </p>
+          <a href="#cta" class="service-link"
+            >Book a stay <i class="fa fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fa fa-car"></i></div>
+          <h3>Transportation</h3>
+          <p>
+            Comfortable, reliable transport with experienced drivers who know
+            every mountain road in Kashmir.
+          </p>
+          <a href="#cta" class="service-link"
+            >Learn more <i class="fa fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fa fa-heart"></i></div>
+          <h3>Honeymoon Packages</h3>
+          <p>
+            Romantic getaways designed for couples — secluded locations, private
+            houseboats, and curated experiences.
+          </p>
+          <a href="#cta" class="service-link"
+            >Plan your trip <i class="fa fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon"><i class="fa fa-sliders-h"></i></div>
+          <h3>Custom Itineraries</h3>
+          <p>
+            Tell us your dream trip and we'll build it from scratch — dates,
+            budget, interests, and everything in between.
+          </p>
+          <a href="#cta" class="service-link"
+            >Get a custom plan <i class="fa fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why">
+      <div class="why-grid">
+        <div class="why-image fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&q=80"
+            alt="Pahalgam river"
+          />
+          <div class="why-image-badge">
+            <i class="fa fa-shield-alt"></i>
+            <div>
+              <strong>Verified & Trusted</strong>
+              <p>Licensed tour operator, Kashmir</p>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <div class="section-tag">Why Choose Us</div>
+          <h2 class="section-title">Travel Smarter with The Vanity Journeys</h2>
+          <div class="why-points">
+            <div class="why-point">
+              <div class="why-point-num">01</div>
+              <div>
+                <h4>Personalized Adventures</h4>
+                <p>
+                  No two trips are the same. We craft itineraries around your
+                  interests, pace, and budget — every single time.
+                </p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-num">02</div>
+              <div>
+                <h4>Local Insider Knowledge</h4>
+                <p>
+                  Born and based in Kashmir, we know the hidden gems, best
+                  seasons, and authentic experiences no guidebook covers.
+                </p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-num">03</div>
+              <div>
+                <h4>Exceptional Service</h4>
+                <p>
+                  From the first enquiry to your return home, our team ensures
+                  every detail is handled with care and precision.
+                </p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-num">04</div>
+              <div>
+                <h4>Transparent Pricing</h4>
+                <p>
+                  No hidden charges, no surprises. What we quote is what you pay
+                  — clear and competitive pricing always.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="section-header center fade-in">
+        <div class="section-tag">Happy Travelers</div>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-sub">
+          Real experiences from real travelers who trusted us with their Kashmir
+          dream.
+        </p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card fade-in">
+          <div class="testi-stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i>
+          </div>
+          <p class="testi-text">
+            "The Vanity Journeys made our Kashmir trip absolutely magical! From
+            seamless planning to breathtaking destinations, everything was
+            perfectly arranged. Highly recommended!"
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">AS</div>
+            <div>
+              <div class="testi-name">Amit Sharma</div>
+              <div class="testi-loc">Delhi</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card fade-in">
+          <div class="testi-stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i>
+          </div>
+          <p class="testi-text">
+            "The team took care of every little detail, ensuring a smooth and
+            enjoyable trip. Their local knowledge and personalized approach made
+            all the difference!"
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">RM</div>
+            <div>
+              <div class="testi-name">Riya Mehta</div>
+              <div class="testi-loc">Punjab</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card fade-in">
+          <div class="testi-stars">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i>
+          </div>
+          <p class="testi-text">
+            "From stunning locations to the most comfortable stays, everything
+            exceeded our expectations. They truly know how to craft the perfect
+            travel experience!"
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar">NK</div>
+            <div>
+              <div class="testi-name">Neha Khanna</div>
+              <div class="testi-loc">Chandigarh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="section-header center fade-in">
+        <div class="section-tag">FAQs</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item fade-in">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What types of packages do you offer?
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            We offer adventure tours, cultural experiences, honeymoon getaways,
+            family packages, and fully customized itineraries tailored to your
+            interests and budget.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Can I customize my travel itinerary?
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Absolutely! We specialize in creating personalized itineraries to
+            match your interests, travel dates, and budget — ensuring a truly
+            unique experience.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What is included in your tour packages?
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Our packages typically include accommodation, transportation,
+            sightseeing, guided tours, and selected meals. Specific inclusions
+            vary by package.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            How do I make a booking? <i class="fa fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            You can book through our website, by calling us, or via WhatsApp. We
+            offer flexible payment options including an initial deposit with the
+            balance payable before travel.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Do you offer hotel bookings separately?
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Yes, we offer standalone hotel and houseboat booking services across
+            Kashmir for a comfortable, hassle-free stay.
+          </div>
+        </div>
+        <div class="faq-item fade-in">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Is customer support available during the trip?
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Absolutely! Our team provides full support throughout your journey
+            to assist with any concerns or emergencies.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="fade-in">
+        <h2>Ready to Explore Kashmir?</h2>
+        <p>
+          Get in touch today and let us plan the perfect journey for you —
+          customized, hassle-free, and unforgettable.
+        </p>
+        <div class="cta-actions">
+          <a
+            href="https://wa.me/917006675853"
+            class="btn-whatsapp"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i> WhatsApp Us
+          </a>
+          <a href="tel:+917006675853" class="btn-call">
+            <i class="fa fa-phone"></i> Call Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">The Vanity <span>Journeys</span></span>
+          <p>
+            Your trusted travel partner in Kashmir. We craft unforgettable
+            journeys through the most beautiful landscapes in the world — one
+            memory at a time.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com/thevanityjourneys" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/917006675853" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="mailto:vanityjourneys@gmail.com"
+              ><i class="fa fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#faq">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#">Srinagar</a></li>
+            <li><a href="#">Gulmarg</a></li>
+            <li><a href="#">Pahalgam</a></li>
+            <li><a href="#">Dal Lake</a></li>
+            <li><a href="#">Leh – Ladakh</a></li>
+            <li><a href="#">Sonmarg</a></li>
+            <li><a href="#">Gurez</a></li>
+            <li><a href="#">Doodhpathri</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa fa-map-marker-alt"></i
+            ><span>AR Complex Palpora, Near Danish Stadium, Srinagar</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-phone"></i
+            ><span>+91 70066 75853<br />+91 60054 66641</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-envelope"></i><span>vanityjourneys@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-clock"></i><span>Mon – Sat, 8:00 AM – 8:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 The Vanity Journeys. All rights reserved.</span>
+        <div class="footer-approved">
+          <span>✦ J&amp;K Tourism Approved</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/917006675853" class="wa-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+      // Navbar scroll effect
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 40);
+      });
+
+      // Intersection Observer for fade-in
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add("visible"), i * 80);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
+
+      // FAQ toggle
+      function toggleFaq(el) {
+        const item = el.parentElement;
+        const isOpen = item.classList.contains("open");
+        document
+          .querySelectorAll(".faq-item")
+          .forEach((f) => f.classList.remove("open"));
+        if (!isOpen) item.classList.add("open");
+      }
+
+      // Mobile menu
+      function toggleMenu() {
+        const links = document.querySelector(".nav-links");
+        if (links.style.display === "flex") {
+          links.style.display = "";
+        } else {
+          links.style.cssText =
+            "display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:white;padding:1.5rem 5%;box-shadow:var(--shadow-lg);gap:1rem;z-index:999;";
+        }
+      }
+    </script>
+  </body>
+</html>
