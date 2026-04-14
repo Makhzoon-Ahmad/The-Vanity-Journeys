@@ -81,27 +81,32 @@
           </div>
         </div>
       </div>
-      
+
       <!-- ENQUIRY STRIP -->
       <div class="enquiry-strip">
         <p><strong>Quick Enquiry -</strong> Tell us where you want to go</p>
         <div class="enquiry-form">
-         <div class="enquiry-form-div">
-          <input type="text" placeholder="Your name" />
-          <input type="tel" placeholder="Phone number" />
-          <input type="number" name="people" id="people" placeholder="Number of people">
-          <select class="enquiry-dest">
-            <option value="" disabled selected>Select destination</option>
-            <option>Srinagar</option>
-            <option>Gulmarg</option>
-            <option>Pahalgam</option>
-            <option>Doodhpathri</option>
-            <option>Sonmarg</option>
-            <option>Gurez</option>
-            <option>Dal Lake</option>
-            <option>Leh – Ladakh</option>
-          </select>
-         </div> 
+          <div class="enquiry-form-div">
+            <input type="text" placeholder="Your name" />
+            <input type="tel" placeholder="Phone number" />
+            <input
+              type="number"
+              name="people"
+              id="people"
+              placeholder="Number of people"
+            />
+            <select class="enquiry-dest">
+              <option value="" disabled selected>Select destination</option>
+              <option>Srinagar</option>
+              <option>Gulmarg</option>
+              <option>Pahalgam</option>
+              <option>Doodhpathri</option>
+              <option>Sonmarg</option>
+              <option>Gurez</option>
+              <option>Dal Lake</option>
+              <option>Leh – Ladakh</option>
+            </select>
+          </div>
           <button type="button" class="enquiry-btn">Send Enquiry</button>
         </div>
       </div>
@@ -686,6 +691,34 @@
             "display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:white;padding:1.5rem 5%;box-shadow:var(--shadow-lg);gap:1rem;z-index:999;";
         }
       }
+      document.querySelector(".enquiry-btn").addEventListener("click", () => {
+        const name = document
+          .querySelector('input[placeholder="Your name"]')
+          .value.trim();
+        const phone = document
+          .querySelector('input[placeholder="Phone number"]')
+          .value.trim();
+        const people = document.querySelector("#people").value.trim();
+        const destination = document.querySelector(".enquiry-dest").value;
+
+        // Basic validation
+        if (!name || !phone || !people || !destination) {
+          alert("Please fill all fields");
+          return;
+        }
+
+        const message = `New Enquiry:
+Name: ${name}
+Phone: ${phone}
+People: ${people}
+Destination: ${destination}`;
+
+        const whatsappNumber = "917006675853";
+
+        const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+        window.open(url, "_blank");
+      });
     </script>
   </body>
 </html>
