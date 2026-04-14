@@ -1216,8 +1216,7 @@ footer {
   html {
     scroll-behavior:auto;
   }
-  .hero-bg,
-  #services {
+  .hero-bg {
     background-attachment: scroll;
   }
   .enquiry-form-div {
