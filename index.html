@@ -75,49 +75,47 @@
         </p>
         <div class="hero-buttons">
           <a href="#destinations" class="btn-primary">View Packages</a>
+          <div class="hero-scroll">
+            <span>Scroll</span>
+            <i class="fa fa-chevron-down"></i>
+          </div>
         </div>
       </div>
-      <div class="hero-scroll">
-        <span>Scroll</span>
-        <i class="fa fa-chevron-down"></i>
+      
+      <!-- ENQUIRY STRIP -->
+      <div class="enquiry-strip">
+        <p><strong>Quick Enquiry -</strong> Tell us where you want to go</p>
+        <div class="enquiry-form">
+         <div class="enquiry-form-div">
+          <input type="text" placeholder="Your name" />
+          <input type="tel" placeholder="Phone number" />
+          <input type="number" name="people" id="people" placeholder="Number of people">
+          <select class="enquiry-dest">
+            <option value="" disabled selected>Select destination</option>
+            <option>Srinagar</option>
+            <option>Gulmarg</option>
+            <option>Pahalgam</option>
+            <option>Doodhpathri</option>
+            <option>Sonmarg</option>
+            <option>Gurez</option>
+            <option>Dal Lake</option>
+            <option>Leh – Ladakh</option>
+          </select>
+         </div> 
+          <button type="button" class="enquiry-btn">Send Enquiry</button>
+        </div>
       </div>
     </section>
-
-    <!-- ENQUIRY STRIP -->
-    <div class="enquiry-strip">
-      <p><strong>Quick Enquiry</strong> – Tell us where you want to go</p>
-      <div class="enquiry-form">
-        <input type="text" placeholder="Your name" />
-        <input type="tel" placeholder="Phone number" />
-        <select>
-          <option value="" disabled selected>Select destination</option>
-          <option>Srinagar</option>
-          <option>Gulmarg</option>
-          <option>Pahalgam</option>
-          <option>Doodhpathri</option>
-          <option>Sonmarg</option>
-          <option>Gurez</option>
-          <option>Dal Lake</option>
-          <option>Leh – Ladakh</option>
-        </select>
-        <button type="button">Send Enquiry</button>
-      </div>
-    </div>
 
     <!-- ABOUT -->
     <section id="about">
       <div class="about-grid">
         <div class="about-images fade-in">
           <div class="about-img-main">
-            <img
-              src="./assets/images/about-img.jpeg"  alt="Kashmir Valley"
-            />
+            <img src="./assets/images/about-img.jpeg" alt="Kashmir Valley" />
           </div>
           <div class="about-img-accent">
-            <img
-              src="./assets/images/about-img-main.jpeg"
-              alt="Ladakh"
-            />
+            <img src="./assets/images/about-img-main.jpeg" alt="Ladakh" />
           </div>
         </div>
         <div class="about-content fade-in">
@@ -187,7 +185,7 @@
     </section>
 
     <!-- DESTINATIONS -->
-    <section id="destinations">
+    <!-- <section id="destinations">
       <div class="section-header center fade-in">
         <div class="section-tag">Explore</div>
         <h2 class="section-title">Our Tour Destinations</h2>
@@ -288,14 +286,14 @@
           <div class="dest-arrow"><i class="fa fa-arrow-right"></i></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- SERVICES -->
     <section id="services">
       <div class="section-header center fade-in">
-        <div class="section-tag">What We Offer</div>
-        <h2 class="section-title">Our Services</h2>
-        <p class="section-sub">
+        <div class="section-tag" id="service-tag">What We Offer</div>
+        <h2 class="section-title" id="service-title">Our Services</h2>
+        <p class="section-sub" id="service-sub">
           Everything you need for a perfect Kashmir trip, handled end-to-end.
         </p>
       </div>
@@ -331,39 +329,6 @@
           </p>
           <a href="#cta" class="service-link"
             >Book a stay <i class="fa fa-arrow-right"></i
-          ></a>
-        </div>
-        <div class="service-card fade-in">
-          <div class="service-icon"><i class="fa fa-car"></i></div>
-          <h3>Transportation</h3>
-          <p>
-            Comfortable, reliable transport with experienced drivers who know
-            every mountain road in Kashmir.
-          </p>
-          <a href="#cta" class="service-link"
-            >Learn more <i class="fa fa-arrow-right"></i
-          ></a>
-        </div>
-        <div class="service-card fade-in">
-          <div class="service-icon"><i class="fa fa-heart"></i></div>
-          <h3>Honeymoon Packages</h3>
-          <p>
-            Romantic getaways designed for couples — secluded locations, private
-            houseboats, and curated experiences.
-          </p>
-          <a href="#cta" class="service-link"
-            >Plan your trip <i class="fa fa-arrow-right"></i
-          ></a>
-        </div>
-        <div class="service-card fade-in">
-          <div class="service-icon"><i class="fa fa-sliders-h"></i></div>
-          <h3>Custom Itineraries</h3>
-          <p>
-            Tell us your dream trip and we'll build it from scratch — dates,
-            budget, interests, and everything in between.
-          </p>
-          <a href="#cta" class="service-link"
-            >Get a custom plan <i class="fa fa-arrow-right"></i
           ></a>
         </div>
       </div>
