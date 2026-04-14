@@ -1213,6 +1213,10 @@ footer {
 }
 
 @media (max-width:420px){
+
+ .hero-bg{
+  background-attachment: scroll;
+ } 
   .enquiry-form-div{
     grid-template-columns: 1fr;
   }
