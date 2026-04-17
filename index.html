@@ -15,6 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="prefetch" href="/packages.html" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -722,6 +723,11 @@ Destination: ${destination}`;
 
         window.open(url, "_blank");
       });
+    </script>
+    <script type="speculationrules">
+      {
+        "prerender": [{ "urls": ["/packages.html"] }]
+      }
     </script>
   </body>
 </html>
