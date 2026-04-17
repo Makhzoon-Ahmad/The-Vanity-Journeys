@@ -8,359 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --primary: #2C5F7A;
-      --primary-dark: #1a3d50;
-      --primary-light: #4a85a3;
-      --accent: #C9A96E;
-      --accent-light: #e8d5b0;
-      --cream: #F8F4EF;
-      --cream-dark: #ede7de;
-      --dark: #1a1a1a;
-      --text: #333;
-      --text-light: #666;
-      --white: #fff;
-      --font-display: 'Playfair Display', serif;
-      --font-body: 'DM Sans', sans-serif;
-      --shadow: 0 4px 24px rgba(44,95,122,0.10);
-      --shadow-lg: 0 12px 48px rgba(44,95,122,0.18);
-      --radius: 12px;
-      --radius-lg: 20px;
-    }
-
-    html { scroll-behavior: smooth; }
-    body { font-family: var(--font-body); color: var(--text); background: var(--white); overflow-x: hidden; }
-
-    /* ─── NAVBAR ─── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%; height: 72px;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(44,95,122,0.08);
-      transition: box-shadow 0.3s;
-    }
-    nav.scrolled { box-shadow: var(--shadow); }
-    .nav-logo { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
-    .nav-logo span { color: var(--accent); }
-    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
-    .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text); text-decoration: none; letter-spacing: 0.5px; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--primary); }
-    .nav-dropdown { position: relative; }
-    .nav-dropdown > a::after { content: ' ▾'; font-size: 0.7rem; }
-    .dropdown-menu { display: none; position: absolute; top: calc(100% + 8px); left: 0; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-lg); min-width: 200px; padding: 8px 0; border: 1px solid rgba(44,95,122,0.08); }
-    .nav-dropdown:hover .dropdown-menu { display: block; }
-    .dropdown-menu a { display: block; padding: 10px 18px; font-size: 0.875rem; color: var(--text); }
-    .dropdown-menu a:hover { background: var(--cream); color: var(--primary); }
-    .nav-cta { background: var(--primary); color: var(--white) !important; padding: 10px 22px; border-radius: 50px; font-weight: 500 !important; font-size: 0.875rem !important; transition: background 0.2s, transform 0.15s !important; }
-    .nav-cta:hover { background: var(--primary-dark) !important; transform: translateY(-1px); }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-    .hamburger span { display: block; width: 24px; height: 2px; background: var(--primary); border-radius: 2px; }
-
-    /* ─── PAGE HERO ─── */
-    .page-hero {
-      position: relative; height: 380px;
-      display: flex; align-items: center; justify-content: center;
-      overflow: hidden; margin-top: 72px;
-    }
-    .page-hero-bg {
-      position: absolute; inset: 0;
-      background:
-        linear-gradient(rgba(26,61,80,0.65), rgba(26,61,80,0.75)),
-        url('https://images.unsplash.com/photo-1566837945700-30057527ade0?w=1600&q=80') center/cover;
-    }
-    .page-hero-content { position: relative; z-index: 2; text-align: center; padding: 0 5%; }
-    .page-hero-badge {
-      display: inline-block;
-      background: rgba(201,169,110,0.2); border: 1px solid rgba(201,169,110,0.5);
-      color: var(--accent-light); padding: 5px 16px; border-radius: 50px;
-      font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem;
-    }
-    .page-hero-content h1 {
-      font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.5rem);
-      font-weight: 700; color: var(--white); line-height: 1.2; margin-bottom: 0.75rem;
-    }
-    .page-hero-content p { font-size: 1rem; color: rgba(255,255,255,0.8); max-width: 500px; margin: 0 auto; line-height: 1.7; }
-    .breadcrumb {
-      position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
-      display: flex; align-items: center; gap: 8px;
-      font-size: 0.8rem; color: rgba(255,255,255,0.6);
-    }
-    .breadcrumb a { color: var(--accent); text-decoration: none; }
-    .breadcrumb i { font-size: 0.6rem; }
-
-    /* ─── SECTION COMMONS ─── */
-    .section-tag { font-size: 0.75rem; font-weight: 500; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
-    .section-title { font-family: var(--font-display); font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700; color: var(--primary-dark); line-height: 1.2; margin-bottom: 1rem; }
-    .section-sub { font-size: 1rem; color: var(--text-light); line-height: 1.7; }
-    .fade-in { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-    /* ─── PACKAGE TABS ─── */
-    .pkg-tabs-wrap { background: var(--cream); padding: 0 5%; border-bottom: 1px solid var(--cream-dark); }
-    .pkg-tabs { display: flex; gap: 0; overflow-x: auto; }
-    .pkg-tab {
-      padding: 18px 28px; font-size: 0.875rem; font-weight: 500;
-      color: var(--text-light); cursor: pointer; white-space: nowrap;
-      border-bottom: 3px solid transparent; transition: all 0.2s;
-      background: none; border-top: none; border-left: none; border-right: none;
-      font-family: var(--font-body);
-    }
-    .pkg-tab:hover { color: var(--primary); }
-    .pkg-tab.active { color: var(--primary); border-bottom-color: var(--primary); font-weight: 600; }
-
-    /* ─── PACKAGE SECTION ─── */
-    .pkg-section { padding: 80px 5%; }
-    .pkg-section:nth-child(even) { background: var(--cream); }
-
-    .pkg-section-header { text-align: center; margin-bottom: 3.5rem; }
-    .pkg-section-header .pkg-duration-badge {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--primary); color: var(--white);
-      padding: 6px 18px; border-radius: 50px; font-size: 0.8rem;
-      font-weight: 500; margin-bottom: 1rem; letter-spacing: 0.5px;
-    }
-
-    /* ─── PACKAGE CARDS ROW ─── */
-    .pkg-cards-row {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 2rem; max-width: 1100px; margin: 0 auto;
-    }
-
-    .pkg-card {
-      background: var(--white); border-radius: var(--radius-lg);
-      overflow: hidden; box-shadow: var(--shadow);
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex; flex-direction: column;
-    }
-    .pkg-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
-
-    .pkg-card-img {
-      position: relative; height: 220px; overflow: hidden;
-    }
-    .pkg-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
-    .pkg-card:hover .pkg-card-img img { transform: scale(1.07); }
-    .pkg-card-badge {
-      position: absolute; top: 14px; left: 14px;
-      background: var(--accent); color: var(--dark);
-      padding: 5px 14px; border-radius: 50px;
-      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px;
-    }
-    .pkg-card-star {
-      position: absolute; top: 14px; right: 14px;
-      background: rgba(26,61,80,0.75); backdrop-filter: blur(4px);
-      color: var(--accent); padding: 5px 10px; border-radius: 50px;
-      font-size: 0.72rem; font-weight: 500;
-    }
-
-    .pkg-card-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
-    .pkg-card-tag { font-size: 0.72rem; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
-    .pkg-card-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem; }
-    .pkg-card-price { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem; }
-    .pkg-card-price span { font-size: 0.8rem; font-weight: 400; color: var(--text-light); }
-    .pkg-card-duration { font-size: 0.8rem; color: var(--text-light); margin-bottom: 1rem; display: flex; align-items: center; gap: 6px; }
-    .pkg-card-duration i { color: var(--accent); }
-
-    .pkg-highlights { list-style: none; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 6px; }
-    .pkg-highlights li { font-size: 0.85rem; color: var(--text-light); display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
-    .pkg-highlights li i { color: var(--primary); margin-top: 2px; flex-shrink: 0; font-size: 0.75rem; }
-
-    .pkg-card-actions { display: flex; gap: 0.75rem; margin-top: auto; }
-    .btn-view {
-      flex: 1; text-align: center; padding: 11px 16px;
-      border: 2px solid var(--primary); border-radius: 50px;
-      color: var(--primary); font-size: 0.85rem; font-weight: 600;
-      text-decoration: none; transition: all 0.2s; font-family: var(--font-body);
-      cursor: pointer; background: transparent;
-    }
-    .btn-view:hover { background: var(--primary); color: var(--white); }
-    .btn-book {
-      flex: 1; text-align: center; padding: 11px 16px;
-      background: var(--accent); border: 2px solid var(--accent);
-      border-radius: 50px; color: var(--dark);
-      font-size: 0.85rem; font-weight: 600;
-      text-decoration: none; transition: all 0.2s; font-family: var(--font-body);
-      cursor: pointer;
-    }
-    .btn-book:hover { background: transparent; color: var(--accent); }
-
-    /* ─── ITINERARY MODAL ─── */
-    .modal-overlay {
-      display: none; position: fixed; inset: 0; z-index: 2000;
-      background: rgba(26,61,80,0.7); backdrop-filter: blur(4px);
-      align-items: center; justify-content: center; padding: 20px;
-    }
-    .modal-overlay.open { display: flex; }
-    .modal {
-      background: var(--white); border-radius: var(--radius-lg);
-      max-width: 780px; width: 100%; max-height: 88vh;
-      overflow-y: auto; position: relative;
-    }
-    .modal-header {
-      position: sticky; top: 0; background: var(--primary);
-      padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center;
-      z-index: 10;
-    }
-    .modal-header h2 { font-family: var(--font-display); color: var(--white); font-size: 1.4rem; }
-    .modal-header p { color: rgba(255,255,255,0.7); font-size: 0.875rem; margin-top: 4px; }
-    .modal-close {
-      background: rgba(255,255,255,0.15); border: none; color: var(--white);
-      width: 36px; height: 36px; border-radius: 50%; font-size: 1rem;
-      cursor: pointer; display: flex; align-items: center; justify-content: center;
-      transition: background 0.2s;
-    }
-    .modal-close:hover { background: rgba(255,255,255,0.3); }
-    .modal-body { padding: 2rem; }
-
-    /* itinerary days */
-    .itin-day {
-      display: flex; gap: 1.5rem; margin-bottom: 2rem;
-      padding-bottom: 2rem; border-bottom: 1px solid var(--cream-dark);
-    }
-    .itin-day:last-child { border-bottom: none; margin-bottom: 0; }
-    .itin-day-num {
-      flex-shrink: 0; width: 52px; height: 52px;
-      background: var(--primary); color: var(--white);
-      border-radius: 50%; display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      font-family: var(--font-display);
-    }
-    .itin-day-num .day-word { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7; }
-    .itin-day-num .day-n { font-size: 1.1rem; font-weight: 700; line-height: 1; }
-    .itin-day-content h4 { font-size: 1rem; font-weight: 600; color: var(--primary-dark); margin-bottom: 0.5rem; }
-    .itin-day-content p { font-size: 0.875rem; color: var(--text-light); line-height: 1.75; }
-
-    /* pricing table */
-    .pricing-section { margin-top: 2rem; }
-    .pricing-section h3 { font-family: var(--font-display); font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 1rem; }
-    .pricing-tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
-    .pricing-tab {
-      padding: 7px 18px; border-radius: 50px; font-size: 0.8rem; font-weight: 500;
-      border: 1.5px solid var(--cream-dark); cursor: pointer; background: var(--white);
-      font-family: var(--font-body); color: var(--text-light); transition: all 0.2s;
-    }
-    .pricing-tab.active { background: var(--primary); border-color: var(--primary); color: var(--white); }
-    .pricing-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
-    .pricing-table th { background: var(--primary); color: var(--white); padding: 12px 16px; text-align: left; font-weight: 500; }
-    .pricing-table td { padding: 11px 16px; border-bottom: 1px solid var(--cream-dark); }
-    .pricing-table tr:last-child td { border-bottom: none; }
-    .pricing-table tr:nth-child(even) td { background: var(--cream); }
-    .price-highlight { font-weight: 700; color: var(--primary); font-size: 1rem; }
-
-    .includes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
-    .includes-col h4 { font-size: 0.875rem; font-weight: 600; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 8px; }
-    .includes-col h4 i { color: var(--primary); }
-    .includes-col ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-    .includes-col ul li { font-size: 0.82rem; color: var(--text-light); display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
-    .includes-col ul li i { flex-shrink: 0; margin-top: 2px; font-size: 0.7rem; }
-    .inc i { color: #22a04a; }
-    .exc i { color: #e24b4a; }
-
-    .modal-footer {
-      padding: 1.5rem 2rem; border-top: 1px solid var(--cream-dark);
-      display: flex; gap: 1rem; flex-wrap: wrap;
-    }
-
-    /* ─── PRICING OVERVIEW ─── */
-    .pricing-overview { padding: 80px 5%; background: var(--cream); }
-    .pricing-overview-header { text-align: center; margin-bottom: 3rem; }
-    .hotel-tier-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 960px; margin: 0 auto; }
-    .hotel-tier-card {
-      background: var(--white); border-radius: var(--radius-lg);
-      padding: 2rem; box-shadow: var(--shadow); text-align: center;
-      border-top: 4px solid transparent; transition: transform 0.3s;
-    }
-    .hotel-tier-card:hover { transform: translateY(-4px); }
-    .hotel-tier-card.tier-1 { border-top-color: #888; }
-    .hotel-tier-card.tier-2 { border-top-color: var(--accent); }
-    .hotel-tier-card.tier-3 { border-top-color: var(--primary); }
-    .tier-stars { color: var(--accent); font-size: 0.9rem; margin-bottom: 0.5rem; }
-    .tier-name { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 1rem; }
-    .tier-hotels { font-size: 0.8rem; color: var(--text-light); line-height: 1.8; margin-bottom: 1rem; }
-    .tier-starting { font-size: 0.75rem; color: var(--text-light); }
-    .tier-starting strong { display: block; font-size: 1.3rem; color: var(--primary); font-weight: 700; margin-top: 2px; }
-
-    /* ─── INCLUDES / EXCLUDES ─── */
-    .incl-section { padding: 80px 5%; background: var(--white); }
-    .incl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 960px; margin: 2rem auto 0; }
-    .incl-box { border-radius: var(--radius-lg); padding: 2rem; }
-    .incl-box.green { background: #f0faf4; border: 1px solid #b7e5c8; }
-    .incl-box.red { background: #fff5f5; border: 1px solid #f5c1c1; }
-    .incl-box h3 { font-size: 1rem; font-weight: 700; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 10px; }
-    .incl-box.green h3 { color: #1a6e38; }
-    .incl-box.red h3 { color: #a32d2d; }
-    .incl-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .incl-list li { font-size: 0.875rem; line-height: 1.6; display: flex; align-items: flex-start; gap: 10px; }
-    .incl-list li i { flex-shrink: 0; margin-top: 3px; font-size: 0.75rem; }
-    .incl-box.green .incl-list li { color: #2d6a4f; }
-    .incl-box.green .incl-list li i { color: #22a04a; }
-    .incl-box.red .incl-list li { color: #7b3131; }
-    .incl-box.red .incl-list li i { color: #e24b4a; }
-
-    /* ─── CTA ─── */
-    #cta {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
-      text-align: center; padding: 90px 5%;
-    }
-    #cta h2 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); color: var(--white); margin-bottom: 1rem; }
-    #cta p { color: rgba(255,255,255,0.8); max-width: 520px; margin: 0 auto 2.5rem; line-height: 1.7; }
-    .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .btn-whatsapp { display: inline-flex; align-items: center; gap: 10px; background: #25d366; color: var(--white); padding: 14px 28px; border-radius: 50px; font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: opacity 0.2s; }
-    .btn-whatsapp:hover { opacity: 0.88; }
-    .btn-call { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.15); color: var(--white); padding: 14px 28px; border-radius: 50px; font-weight: 500; font-size: 0.95rem; text-decoration: none; border: 2px solid rgba(255,255,255,0.4); transition: background 0.2s; }
-    .btn-call:hover { background: rgba(255,255,255,0.25); }
-
-    /* ─── FOOTER ─── */
-    footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 60px 5% 30px; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 3rem; }
-    .footer-brand .logo { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--white); margin-bottom: 1rem; display: block; }
-    .footer-brand .logo span { color: var(--accent); }
-    .footer-brand p { font-size: 0.875rem; line-height: 1.7; margin-bottom: 1.25rem; }
-    .footer-socials { display: flex; gap: 12px; }
-    .footer-socials a { width: 38px; height: 38px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); font-size: 0.9rem; text-decoration: none; transition: background 0.2s, color 0.2s; }
-    .footer-socials a:hover { background: var(--accent); color: var(--dark); }
-    .footer-col h4 { font-size: 0.875rem; font-weight: 600; color: var(--white); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1.25rem; }
-    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-col ul a { font-size: 0.875rem; color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
-    .footer-col ul a:hover { color: var(--accent); }
-    .footer-contact-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.875rem; margin-bottom: 12px; }
-    .footer-contact-item i { color: var(--accent); margin-top: 2px; flex-shrink: 0; }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; }
-    .footer-approved span { background: rgba(201,169,110,0.15); border: 1px solid rgba(201,169,110,0.3); color: var(--accent); padding: 4px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: 500; }
-    .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25d366; color: var(--white); width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.4); animation: pulse 2.5s infinite; }
-
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(36px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes pulse { 0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 4px 32px rgba(37,211,102,0.7); } }
-
-    @media (max-width: 1024px) {
-      .pkg-cards-row { grid-template-columns: repeat(2, 1fr); }
-      .hotel-tier-cards { grid-template-columns: 1fr 1fr; }
-      .incl-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-    }
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .hamburger { display: flex; }
-      .pkg-cards-row { grid-template-columns: 1fr; }
-      .hotel-tier-cards { grid-template-columns: 1fr; }
-      .includes-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
-      .modal-body { padding: 1.25rem; }
-      .modal-header { padding: 1.25rem; }
-      .modal-footer { padding: 1.25rem; }
-    }
-  </style>
+    <link rel="stylesheet" href="packages.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav id="navbar">
-  <a href="index.html" class="nav-logo">The Vanity <span>Journeys</span></a>
+  <a href="index.html" class="nav-logo"><img src="./assets/images/vanityLogo.jpeg" alt="The Vanity Journeys"></a>
   <ul class="nav-links">
     <li><a href="index.html#about">About</a></li>
     <li class="nav-dropdown">
@@ -403,18 +57,6 @@
   </div>
 </div>
 
-<!-- TABS -->
-<div class="pkg-tabs-wrap">
-  <div class="pkg-tabs">
-    <button class="pkg-tab active" onclick="scrollTo('option1')">Option 1 — 3N/4D</button>
-    <button class="pkg-tab" onclick="scrollTo('option2')">Option 2 — 4N/5D</button>
-    <button class="pkg-tab" onclick="scrollTo('option3')">Option 3 — 5N/6D</button>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════
-     OPTION 1 — 3 Nights / 4 Days
-════════════════════════════════ -->
 <section class="pkg-section" id="option1">
   <div class="pkg-section-header fade-in">
     <div class="pkg-duration-badge"><i class="fa fa-calendar-alt"></i> 3 Nights / 4 Days</div>
@@ -427,7 +69,7 @@
     <!-- 3 Star -->
     <div class="pkg-card fade-in">
       <div class="pkg-card-img">
-        <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=700&q=80" alt="3 Star Package"/>
+        <img src="./assets/images/tour-dest1.jpeg" alt="3 Star Package"/>
         <div class="pkg-card-badge">3 Star</div>
         <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
       </div>
@@ -453,7 +95,7 @@
     <!-- 3 Star Premium -->
     <div class="pkg-card fade-in" style="border: 2px solid var(--accent);">
       <div class="pkg-card-img">
-        <img src="https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?w=700&q=80" alt="3 Star Premium"/>
+        <img src="./assets/images/tour-dest2.jpeg" alt="3 Star Premium"/>
         <div class="pkg-card-badge" style="background:var(--primary);color:var(--white);">Most Popular</div>
         <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
       </div>
@@ -479,7 +121,7 @@
     <!-- 4 Star -->
     <div class="pkg-card fade-in">
       <div class="pkg-card-img">
-        <img src="https://images.unsplash.com/photo-1566837945700-30057527ade0?w=700&q=80" alt="4 Star Package"/>
+        <img src="./assets/images/tour-dest3.jpeg" alt="4 Star Package"/>
         <div class="pkg-card-badge" style="background:var(--primary-dark);color:var(--white);">4 Star</div>
         <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
       </div>
@@ -568,7 +210,7 @@
 
     <div class="pkg-card fade-in">
       <div class="pkg-card-img">
-        <img src="https://images.unsplash.com/photo-1598977123118-4e30ba3c4f5b?w=700&q=80" alt="4 Star"/>
+        <img src="./assets/images/tour-dest4.jpeg" alt="4 Star"/>
         <div class="pkg-card-badge" style="background:var(--primary-dark);color:var(--white);">4 Star</div>
         <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
       </div>
@@ -632,7 +274,7 @@
 
     <div class="pkg-card fade-in" style="border: 2px solid var(--accent);">
       <div class="pkg-card-img">
-        <img src="https://images.unsplash.com/photo-1625467096769-ac4a8c4f4e56?w=700&q=80" alt="3 Star Premium"/>
+        <img src="./assets/images/tour-dest5.jpeg" alt="3 Star Premium"/>
         <div class="pkg-card-badge" style="background:var(--primary);color:var(--white);">Most Popular</div>
         <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
       </div>
@@ -797,13 +439,13 @@
       <div class="pricing-section">
         <h3>Pricing — 3 Star Hotels</h3>
         <table class="pricing-table">
-          <thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th><th>Meal Plan</th></tr></thead>
+          <thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead>
           <tbody>
-            <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹8,600</td><td>MAPAI</td></tr>
-            <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹6,600</td><td>MAPAI</td></tr>
-            <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹6,150</td><td>MAPAI</td></tr>
-            <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹6,100</td><td>MAPAI</td></tr>
-            <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹6,000</td><td>MAPAI</td></tr>
+            <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹8,600</td></tr>
+            <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹6,600</td></tr>
+            <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹6,150</td></tr>
+            <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹6,100</td></tr>
+            <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹6,000</td></tr>
           </tbody>
         </table>
         <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Arbiya Villa / Primeland / Twin Towers / Similar &nbsp;|&nbsp; Houseboat: Merlin Group / Similar</p>
@@ -831,13 +473,13 @@
       <div class="pricing-section">
         <h3>Pricing — 3 Star Premium Hotels</h3>
         <table class="pricing-table">
-          <thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th><th>Meal Plan</th></tr></thead>
+          <thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead>
           <tbody>
-            <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹9,350</td><td>MAPAI</td></tr>
-            <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹7,350</td><td>MAPAI</td></tr>
-            <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹6,900</td><td>MAPAI</td></tr>
-            <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹6,850</td><td>MAPAI</td></tr>
-            <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹6,750</td><td>MAPAI</td></tr>
+            <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹9,350</td></tr>
+            <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹7,350</td></tr>
+            <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹6,900</td></tr>
+            <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹6,850</td></tr>
+            <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹6,750</td></tr>
           </tbody>
         </table>
         <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Midtown Greens / Heritage Luxury / Hotel Spring City / Similar &nbsp;|&nbsp; Houseboat: Piano Group / Similar</p>
@@ -865,13 +507,13 @@
       <div class="pricing-section">
         <h3>Pricing — 4 Star Hotels</h3>
         <table class="pricing-table">
-          <thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th><th>Meal Plan</th></tr></thead>
+          <thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead>
           <tbody>
-            <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹13,100</td><td>MAPAI</td></tr>
-            <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹11,100</td><td>MAPAI</td></tr>
-            <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹10,700</td><td>MAPAI</td></tr>
-            <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹10,600</td><td>MAPAI</td></tr>
-            <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹10,500</td><td>MAPAI</td></tr>
+            <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹13,100</td></tr>
+            <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹11,100</td></tr>
+            <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹10,700</td></tr>
+            <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹10,600</td></tr>
+            <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹10,500</td></tr>
           </tbody>
         </table>
         <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Downtown / Hotel Grand Kaiser / Hotel Rose Petal / Similar &nbsp;|&nbsp; Houseboat: Young Alzira Group / Similar</p>
@@ -895,12 +537,12 @@
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Srinagar → Pahalgam → Srinagar</h4><p>Drive to Pahalgam. Visit Betaab Valley and Chandanwari. Horse riding trip to Baisaran meadows (at own cost). After sightseeing, drive back to Srinagar. Transfer to houseboat for overnight stay on Dal Lake.</p></div></div>
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport with memories of Kashmir.</p></div></div>
       <div class="pricing-section"><h3>Pricing — 3 Star Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th><th>Meal Plan</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹11,100</td><td>MAPAI</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹8,600</td><td>MAPAI</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹8,100</td><td>MAPAI</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹8,000</td><td>MAPAI</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹7,900</td><td>MAPAI</td></tr>
+        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
+          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹11,100</td></tr>
+          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹8,600</td></tr>
+          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹8,100</td></tr>
+          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹8,000</td></tr>
+          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹7,900</td></tr>
         </tbody></table>
       </div>
     </div>
@@ -918,12 +560,12 @@
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Srinagar → Pahalgam → Srinagar</h4><p>Pahalgam — Betaab Valley, Chandanwari, Baisaran meadows. Return to Srinagar. Overnight on premium houseboat.</p></div></div>
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport.</p></div></div>
       <div class="pricing-section"><h3>Pricing — 3 Star Premium Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th><th>Meal Plan</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹12,100</td><td>MAPAI</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹9,600</td><td>MAPAI</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹9,100</td><td>MAPAI</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹9,000</td><td>MAPAI</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹8,900</td><td>MAPAI</td></tr>
+        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
+          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹12,100</td></tr>
+          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹9,600</td></tr>
+          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹9,100</td></tr>
+          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹9,000</td></tr>
+          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹8,900</td></tr>
         </tbody></table>
         <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Midtown Greens / Heritage Luxury / Spring City / Similar &nbsp;|&nbsp; Houseboat: Piano Group / Similar</p>
       </div>
@@ -942,12 +584,12 @@
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Srinagar → Pahalgam → Srinagar</h4><p>Pahalgam — Betaab Valley, Chandanwari. Return to Srinagar. Overnight on luxury houseboat.</p></div></div>
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport.</p></div></div>
       <div class="pricing-section"><h3>Pricing — 4 Star Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th><th>Meal Plan</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹17,100</td><td>MAPAI</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹14,600</td><td>MAPAI</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹14,100</td><td>MAPAI</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹14,000</td><td>MAPAI</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹13,900</td><td>MAPAI</td></tr>
+        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
+          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹17,100</td></tr>
+          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹14,600</td></tr>
+          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹14,100</td></tr>
+          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹14,000</td></tr>
+          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹13,900</td></tr>
         </tbody></table>
         <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Downtown / Grand Kaiser / Rose Petal / Similar &nbsp;|&nbsp; Houseboat: Young Alzira / Similar</p>
       </div>
@@ -968,12 +610,12 @@
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Pahalgam → Srinagar</h4><p>After breakfast, leave Pahalgam and drive to Srinagar. Check in to hotel. Afternoon free for shopping. Overnight in Houseboat on Dal Lake.</p></div></div>
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">6</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport with beautiful memories of Kashmir.</p></div></div>
       <div class="pricing-section"><h3>Pricing — 3 Star Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th><th>Meal Plan</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹13,900</td><td>MAPAI</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹10,900</td><td>MAPAI</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹10,200</td><td>MAPAI</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹10,100</td><td>MAPAI</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹10,000</td><td>MAPAI</td></tr>
+        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
+          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹13,900</td></tr>
+          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹10,900</td></tr>
+          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹10,200</td></tr>
+          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹10,100</td></tr>
+          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹10,000</td></tr>
         </tbody></table>
         <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Srinagar: Arbiya Villa / Primeland / Twin Towers &nbsp;|&nbsp; Pahalgam: Hotel Fifth Season / Serenity Pines</p>
       </div>
@@ -993,12 +635,12 @@
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Pahalgam → Srinagar</h4><p>Drive to Srinagar. Afternoon shopping. Overnight on premium houseboat.</p></div></div>
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">6</span></div><div class="itin-day-content"><h4>Departure</h4><p>Check out and transfer to airport.</p></div></div>
       <div class="pricing-section"><h3>Pricing — 3 Star Premium Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th><th>Meal Plan</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹15,100</td><td>MAPAI</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹12,100</td><td>MAPAI</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹11,400</td><td>MAPAI</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹11,350</td><td>MAPAI</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹11,200</td><td>MAPAI</td></tr>
+        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
+          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹15,100</td></tr>
+          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹12,100</td></tr>
+          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹11,400</td></tr>
+          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹11,350</td></tr>
+          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹11,200</td></tr>
         </tbody></table>
         <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Srinagar: Midtown Greens / Heritage Luxury &nbsp;|&nbsp; Pahalgam: Hotel Lavish Residency / White Castle &nbsp;|&nbsp; Houseboat: Piano Group</p>
       </div>
@@ -1018,12 +660,12 @@
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Pahalgam → Srinagar</h4><p>Drive to Srinagar. Afternoon free for shopping. Overnight on luxury houseboat on Dal Lake.</p></div></div>
       <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">6</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport with beautiful memories of Kashmir.</p></div></div>
       <div class="pricing-section"><h3>Pricing — 4 Star Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th><th>Meal Plan</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹21,900</td><td>MAPAI</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹18,900</td><td>MAPAI</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹18,200</td><td>MAPAI</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹18,100</td><td>MAPAI</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹18,000</td><td>MAPAI</td></tr>
+        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
+          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹21,900</td></tr>
+          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹18,900</td></tr>
+          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹18,200</td></tr>
+          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹18,100</td></tr>
+          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹18,000</td></tr>
         </tbody></table>
         <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Srinagar: Hotel Downtown / Grand Kaiser / Rose Petal &nbsp;|&nbsp; Pahalgam: Chinar Resorts & Spa / Faiz Resorts &nbsp;|&nbsp; Houseboat: Young Alzira / Similar</p>
       </div>

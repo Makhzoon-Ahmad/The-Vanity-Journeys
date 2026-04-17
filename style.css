@@ -170,9 +170,9 @@ nav.scrolled {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
 }
 .hero-bg {
+  overflow: hidden;
   position: absolute;
   inset: 0;
   background:
@@ -182,7 +182,7 @@ nav.scrolled {
       rgba(44, 95, 122, 0.3),
       rgba(74, 133, 163, 0.2)
     ),
-    url("./assets/images/tour-image.jpeg");
+    url("./assets/videos/index.webm");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
