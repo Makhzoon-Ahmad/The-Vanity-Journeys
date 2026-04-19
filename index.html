@@ -697,6 +697,17 @@
             "display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:white;padding:1.5rem 5%;box-shadow:var(--shadow-lg);gap:1rem;z-index:999;";
         }
       }
+      document.addEventListener("click", function (e) {
+    const menu = document.querySelector(".nav-links");
+    const hamburger = document.querySelector(".hamburger");
+
+    const isClickInsideMenu = menu.contains(e.target);
+    const isClickOnHamburger = hamburger.contains(e.target);
+
+    if (!isClickInsideMenu && !isClickOnHamburger) {
+      menu.style.display = "";
+    }
+  });
       document.querySelector(".enquiry-btn").addEventListener("click", () => {
         const name = document
           .querySelector('input[placeholder="Your name"]')
