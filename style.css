@@ -1154,6 +1154,10 @@ footer {
   animation: pulse 2.5s infinite;
 }
 
+
+.mobile{
+  display: none;
+}
 /* ─── ANIMATIONS ─── */
 @keyframes fadeUp {
   from {
@@ -1202,7 +1206,7 @@ footer {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
   .nav-links,
   .nav-contact {
     display: none;
@@ -1247,6 +1251,15 @@ footer {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width : 768px){
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
   }
 }
 

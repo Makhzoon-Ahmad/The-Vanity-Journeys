@@ -1105,7 +1105,7 @@ footer {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
   .nav-links,
   .nav-contact {
     display: none;

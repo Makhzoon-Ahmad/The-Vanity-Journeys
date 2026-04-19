@@ -19,41 +19,56 @@
   </head>
   <body>
     <!-- NAVBAR -->
-  <nav id="navbar">
-  <a href="index.html" class="nav-logo"><img src="./assets/images/VanityLogo.png" alt="The Vanity Journeys"></a>
-  <ul class="nav-links">
-    <li><a href="index.html#about">About</a></li>
-    <li class="nav-dropdown">
-      <a href="index.html#destinations">Destinations</a>
-      <div class="dropdown-menu">
-        <a href="#">Srinagar</a><a href="#">Gulmarg</a><a href="#">Pahalgam</a>
-        <a href="#">Doodhpathri</a><a href="sonmarg.html">Sonmarg</a><a href="#">Gurez</a>
-        <a href="#">Dal Lake</a><a href="ladakh.html">Leh – Ladakh</a>
+    <nav id="navbar">
+      <a href="index.html" class="nav-logo"
+        ><img src="./assets/images/VanityLogo.png" alt="The Vanity Journeys"
+      /></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li class="nav-dropdown">
+          <a href="index.html#destinations">Destinations</a>
+          <div class="dropdown-menu">
+            <a href="#">Srinagar</a><a href="#">Gulmarg</a
+            ><a href="#">Pahalgam</a> <a href="#">Doodhpathri</a
+            ><a href="sonmarg.html">Sonmarg</a><a href="#">Gurez</a>
+            <a href="#">Dal Lake</a><a href="ladakh.html">Leh – Ladakh</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="packages.html">Packages</a>
+          <div class="dropdown-menu">
+            <a href="packages.html#option1">Kashmir 3N/4D</a>
+            <a href="packages.html#option2">Kashmir 4N/5D</a>
+            <a href="packages.html#option3">Kashmir 5N/6D</a>
+          </div>
+        </li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="index.html#faq">FAQs</a></li>
+        <li><a href="#cta" class="nav-cta">Book Now</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
       </div>
-    </li>
-    <li class="nav-dropdown">
-      <a href="packages.html">Packages</a>
-      <div class="dropdown-menu">
-        <a href="packages.html#option1">Kashmir 3N/4D</a>
-        <a href="packages.html#option2">Kashmir 4N/5D</a>
-        <a href="packages.html#option3">Kashmir 5N/6D</a>
-      </div>
-    </li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="index.html#faq">FAQs</a></li>
-    <li><a href="#cta" class="nav-cta">Book Now</a></li>
-  </ul>
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
+    </nav>
     <!-- HERO -->
     <section id="hero">
       <div class="hero-bg">
-        <video autoplay muted loop playsinline class="bg-video">
-          <source src="./assets/videos/index.webm" type="video/webm" />
-          <source src="./assets/videos/mobile.webm" type="video/webm" media="(max-width:768px)">
-        </video>
+        <video
+          class="bg-video desktop"
+          autoplay
+          muted
+          loop
+          playsinline
+          src="./assets/videos/index.webm"
+        ></video>
+        <video
+          class="bg-video mobile"
+          autoplay
+          muted
+          loop
+          playsinline
+          src="./assets/videos/mobile.webm"
+        ></video>
         <!-- <img src="./assets/images/tour-image.jpeg" alt="Kashmir landscape" loading="lazy"/> -->
       </div>
       <div class="hero-overlay"></div>
