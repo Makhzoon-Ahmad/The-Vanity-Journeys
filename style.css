@@ -1257,6 +1257,9 @@ footer {
 }
 
 @media (max-width: 420px) {
+  .nav-logo > img{
+    width: 120px;
+  }
   html {
     scroll-behavior: auto;
   }

@@ -57,7 +57,7 @@ nav.scrolled {
   box-shadow: var(--shadow);
 }
 
-.nav-logo > img{
+.nav-logo > img {
   width: 150px;
   text-decoration: none;
   letter-spacing: -0.5px;
@@ -1089,5 +1089,11 @@ footer {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav-logo > img {
+    width: 120px;
   }
 }

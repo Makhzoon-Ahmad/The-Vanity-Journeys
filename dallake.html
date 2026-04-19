@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dal Lake – The Vanity Journeys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="destination.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <a href="index.html" class="nav-logo"
+        ><img src="./assets/images/VanityLogo.png" alt="The Vanity Journeys"
+      /></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li class="nav-dropdown">
+          <a href="index.html#destinations">Destinations</a>
+          <div class="dropdown-menu">
+            <a href="#">Srinagar</a><a href="#">Gulmarg</a
+            ><a href="#">Pahalgam</a> <a href="#">Doodhpathri</a
+            ><a href="sonmarg.html">Sonmarg</a><a href="#">Gurez</a>
+            <a href="#">Dal Lake</a><a href="ladakh.html">Leh – Ladakh</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="packages.html">Packages</a>
+          <div class="dropdown-menu">
+            <a href="packages.html#option1">Kashmir 3N/4D</a>
+            <a href="packages.html#option2">Kashmir 4N/5D</a>
+            <a href="packages.html#option3">Kashmir 5N/6D</a>
+          </div>
+        </li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="index.html#faq">FAQs</a></li>
+        <li><a href="#cta" class="nav-cta">Book Now</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <div class="dest-hero">
+   <div class="dest-hero-bg" style=" background:
+        linear-gradient(to bottom, rgba(26,61,80,0.25) 0%, rgba(26,61,80,0.85) 100%),
+        url('./assets/images/dallake.jpg') center/cover;"></div>
+      <div class="dest-hero-content">
+        <div class="dest-hero-meta">
+          <div class="dest-hero-badge">✦ Destination Guide ✦</div>
+          <div class="dest-hero-region">
+            <i class="fa fa-map-marker-alt"></i> Srinagar, Jammu & Kashmir
+          </div>
+        </div>
+        <h1>Dal <em>Lake</em></h1>
+        <p class="dest-hero-tagline">
+          Srinagar's Timeless Beauty — a mesmerizing 15 km expanse of water
+          reflecting snow-capped peaks, vibrant houseboats, and centuries of
+          Kashmiri culture.
+        </p>
+        <div class="dest-hero-actions">
+          <a href="#cta" class="btn-primary">Plan Your Trip</a>
+          <a href="#about" class="btn-outline">Explore More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── BREADCRUMB + QUICK FACTS ─── -->
+    <div class="breadcrumb-bar">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa fa-chevron-right"></i>
+        <a href="#">Destinations</a>
+        <i class="fa fa-chevron-right"></i>
+        <span>Dal Lake</span>
+      </div>
+      <div class="dest-quick-facts">
+        <div class="dest-quick-fact">
+          <i class="fa fa-water"></i> 15 km² Expanse
+        </div>
+        <div class="dest-quick-fact">
+          <i class="fa fa-map-marker-alt"></i> Heart of Srinagar
+        </div>
+        <div class="dest-quick-fact">
+          <i class="fa fa-calendar-check"></i> Best: Apr – Oct
+        </div>
+        <div class="dest-quick-fact">
+          <i class="fa fa-ship"></i> Iconic Shikaras
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-text   ">
+          <div class="section-tag">About the Destination</div>
+          <h2 class="section-title">Dal Lake: The Jewel of Kashmir</h2>
+          <p>
+            Dal Lake is the <strong>heart of Srinagar</strong> — a mesmerizing
+            expanse of water that perfectly captures the city's timeless charm.
+            Spanning <strong>15 km</strong>, it is the second-largest lake in
+            Jammu & Kashmir, offering breathtaking reflections of the
+            snow-capped Pir Panjal mountains at dawn and dusk.
+          </p>
+          <p>
+            The lake is world-famous for its vibrant
+            <strong>houseboats</strong>, iconic shikaras, and the enchanting
+            floating market known as the <strong>Raad</strong>, where vendors
+            glide across the water selling handicrafts, saffron, fresh
+            vegetables, and local Kashmiri delicacies each morning.
+          </p>
+          <p>
+            In winter, the frozen lake transforms into a
+            <strong>natural ice-skating rink</strong>, drawing visitors from
+            across the country for a truly magical experience. Nearby
+            attractions include <strong>Char Chinar Island</strong>, Nagin Lake,
+            Chashme Shahi, Shankaracharya Temple, Hari Parbat, and the historic
+            Hazratbal Shrine.
+          </p>
+          <p>
+            Whether you drift in a shikara at sunset, sleep on a traditional
+            houseboat, or browse the floating market at sunrise, Dal Lake is an
+            experience that stays with you long after you leave Kashmir.
+          </p>
+        </div>
+
+        <div class="about-sidebar   ">
+          <div class="info-card">
+            <div class="info-card-header">
+              <i class="fa fa-info-circle"></i>
+              <h4>Key Facts</h4>
+            </div>
+            <ul>
+              <li>Area: approximately 15 km² in Srinagar city</li>
+              <li>2nd largest lake in Jammu & Kashmir</li>
+              <li>Home to 50,000+ people living on the lake</li>
+              <li>Famous for houseboats, shikaras & floating gardens</li>
+              <li>Freezes partially in peak winter (Dec–Jan)</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-header">
+              <i class="fa fa-clock"></i>
+              <h4>Getting There</h4>
+            </div>
+            <ul>
+              <li>Located in the heart of Srinagar city</li>
+              <li>15–20 min from Sheikh ul Alam International Airport</li>
+              <li>Accessible year-round — no road closures</li>
+              <li>Board shikaras from Boulevard Road or Nehru Park ghat</li>
+            </ul>
+          </div>
+
+          <div class="highlight-strip">
+            <h4>Must Experiences</h4>
+            <div class="highlight-item">
+              <i class="fa fa-check-circle"></i
+              ><span>Sunrise shikara ride on the lake</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa fa-check-circle"></i
+              ><span>Stay overnight on a traditional houseboat</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa fa-check-circle"></i
+              ><span>Floating vegetable & flower market (Raad)</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa fa-check-circle"></i
+              ><span>Visit Char Chinar Island & Nagin Lake</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa fa-check-circle"></i
+              ><span>Ice skating on frozen lake in winter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+
+    <!-- ─── HIGHLIGHTS ─── -->
+    <section id="highlights">
+      <div class="  " style="text-align: center">
+        <div class="section-tag">Why Visit</div>
+        <h2 class="section-title">What Makes Dal Lake Special</h2>
+        <p class="section-sub" style="max-width: 540px; margin: 0 auto">
+          From floating markets at sunrise to houseboat evenings at dusk — Dal
+          Lake is a living, breathing world of its own.
+        </p>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card   ">
+          <div class="highlight-card-icon"><i class="fa fa-ship"></i></div>
+          <h3>Shikara Rides</h3>
+          <p>
+            Drift across the glassy waters at sunrise or sunset in a hand-carved
+            wooden shikara — one of the most iconic and peaceful experiences in
+            all of India.
+          </p>
+        </div>
+        <div class="highlight-card   ">
+          <div class="highlight-card-icon"><i class="fa fa-home"></i></div>
+          <h3>Houseboat Stays</h3>
+          <p>
+            Sleep on a beautifully carved cedar wood houseboat, complete with
+            hand-knotted carpets, walnut furniture, and panoramic mountain
+            views.
+          </p>
+        </div>
+        <div class="highlight-card   ">
+          <div class="highlight-card-icon"><i class="fa fa-store"></i></div>
+          <h3>Floating Markets</h3>
+          <p>
+            Experience the magical Raad market at dawn — vendors in shikaras
+            selling saffron, handicrafts, lotus stems, and fresh vegetables on
+            the water.
+          </p>
+        </div>
+        <div class="highlight-card   ">
+          <div class="highlight-card-icon"><i class="fa fa-leaf"></i></div>
+          <h3>Lotus Gardens</h3>
+          <p>
+            In summer, Dal Lake blooms with thousands of lotus flowers — a
+            breathtaking sight best viewed by shikara through the floating
+            gardens (Rad).
+          </p>
+        </div>
+        <div class="highlight-card   ">
+          <div class="highlight-card-icon"><i class="fa fa-mosque"></i></div>
+          <h3>Hazratbal Shrine</h3>
+          <p>
+            Visit the iconic white marble mosque on the banks of Dal Lake, home
+            to a revered relic and offering stunning reflections on the water's
+            surface.
+          </p>
+        </div>
+        <div class="highlight-card   ">
+          <div class="highlight-card-icon"><i class="fa fa-snowflake"></i></div>
+          <h3>Winter Ice Skating</h3>
+          <p>
+            When Dal Lake partially freezes in December–January, it becomes a
+            natural ice rink — a rare and unforgettable winter spectacle in
+            Srinagar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── BEST TIME ─── -->
+    <section id="best-time">
+      <div class="best-time-grid">
+        <div class="best-time-content   ">
+          <div class="section-tag">When to Visit</div>
+          <h2 class="section-title">Best Time to Visit Dal Lake</h2>
+          <p class="section-sub">
+            Dal Lake is beautiful year-round, but each season offers a
+            completely different palette and experience.
+          </p>
+          <div class="season-cards" style="margin-top: 1.75rem">
+            <div class="season-card">
+              <div class="season-icon"><i class="fa fa-sun"></i></div>
+              <div>
+                <h4>
+                  Spring & Summer — April to August
+                  <span class="season-best">Best Season</span>
+                </h4>
+                <p>
+                  The lake blooms with lotus flowers, shikaras glide on calm
+                  blue water, and the Mughal Gardens along the shore are at
+                  their colourful best. Temperatures 15°C–28°C.
+                </p>
+              </div>
+            </div>
+            <div class="season-card">
+              <div class="season-icon"><i class="fa fa-leaf"></i></div>
+              <div>
+                <h4>Autumn — September to November</h4>
+                <p>
+                  Crisp air, golden chinar trees lining the shore, and stunning
+                  mountain reflections on the lake. Fewer tourists and perfect
+                  photography conditions.
+                </p>
+              </div>
+            </div>
+            <div class="season-card">
+              <div class="season-icon"><i class="fa fa-snowflake"></i></div>
+              <div>
+                <h4>
+                  Winter — December to March
+                  <span class="season-best">Ice Skating</span>
+                </h4>
+                <p>
+                  The lake partially freezes for a magical ice-skating
+                  experience. Houseboats are cozy and warm, and the misty
+                  mornings create an ethereal atmosphere.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tips-box   ">
+          <h3>Travel Tips for Dal Lake</h3>
+          <ul class="tips-list">
+            <li>
+              <i class="fa fa-check"></i> Always negotiate shikara fares before
+              boarding — fixed government rates exist but vendors often quote
+              higher. Ask your hotel for guidance.
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Wake up early for the floating
+              vegetable market (Raad) — it runs from around 6 AM to 8 AM and is
+              an unmissable experience.
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Book houseboats through a reputable
+              agent or your tour operator to ensure quality, safety, and fair
+              pricing.
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Carry a light jacket even in summer —
+              evenings on the water can get quite cool due to the lake breeze.
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Avoid swimming in the lake — it is
+              heavily populated and not recommended for bathing. Stick to
+              shikara rides.
+            </li>
+            <li>
+              <i class="fa fa-check"></i> The Boulevard Road around the lake is
+              perfect for an evening walk with views of the illuminated
+              houseboats.
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Visit Hazratbal Shrine and
+              Shankaracharya Temple for stunning elevated views of Dal Lake from
+              above.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── NEARBY DESTINATIONS ─── -->
+    <section id="nearby">
+      <div class="  " style="text-align: center; margin-bottom: 0">
+        <div class="section-tag">Also Explore</div>
+        <h2 class="section-title">Other Destinations Near Dal Lake</h2>
+        <p class="section-sub" style="max-width: 500px; margin: 0 auto">
+          Dal Lake is the perfect base to explore all of Srinagar and the
+          surrounding Kashmir Valley.
+        </p>
+      </div>
+      <div class="nearby-grid">
+        <a href="sonmarg.html" class="nearby-card   ">
+          <img
+            src="./assets/images/sonmarg/sonmarg2.webp"
+            alt="Sonmarg"
+          />
+          <div class="nearby-overlay">
+            <div class="nearby-name">Sonmarg</div>
+            <div class="nearby-tag">Meadow of Gold · Glacier Trek</div>
+          </div>
+          <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
+        </a>
+        <div class="nearby-card   ">
+          <img
+            src="https://images.unsplash.com/photo-1625467096769-ac4a8c4f4e56?w=500&q=80"
+            alt="Gurez Valley"
+          />
+          <div class="nearby-overlay">
+            <div class="nearby-name">Gurez Valley</div>
+            <div class="nearby-tag">Remote · Habba Khatoon Peak</div>
+          </div>
+          <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="nearby-card   ">
+          <img
+            src="https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?w=500&q=80"
+            alt="Gulmarg"
+          />
+          <div class="nearby-overlay">
+            <div class="nearby-name">Gulmarg</div>
+            <div class="nearby-tag">Snow · Gondola · Skiing</div>
+          </div>
+          <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="nearby-card   ">
+          <img
+            src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&q=80"
+            alt="Pahalgam"
+          />
+          <div class="nearby-overlay">
+            <div class="nearby-name">Pahalgam</div>
+            <div class="nearby-tag">Valley · River · Trekking</div>
+          </div>
+          <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <section id="cta">
+      <div class="  ">
+        <h2>Ready to Experience Dal Lake?</h2>
+        <p>
+          Let us plan your perfect Srinagar stay — houseboat bookings, shikara
+          rides, and seamless transfers all taken care of.
+        </p>
+        <div class="cta-actions">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%27m%20interested%20in%20a%20Dal%20Lake%20%2F%20Srinagar%20tour%20package"
+            class="btn-whatsapp"
+            target="_blank"
+            ><i class="fab fa-whatsapp"></i> WhatsApp Us</a
+          >
+          <a href="tel:+917006675853" class="btn-call"
+            ><i class="fa fa-phone"></i> Call Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">The Vanity <span>Journeys</span></span>
+          <p>
+            Your trusted travel partner in Kashmir. We craft unforgettable
+            journeys through the most beautiful landscapes in the world — one
+            memory at a time.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com/thevanityjourneys" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/917006675853" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="mailto:vanityjourneys@gmail.com"
+              ><i class="fa fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#">Srinagar</a></li>
+            <li><a href="#">Gulmarg</a></li>
+            <li><a href="#">Pahalgam</a></li>
+            <li><a href="#">Dal Lake</a></li>
+            <li><a href="sonmarg.html">Sonmarg</a></li>
+            <li><a href="#">Gurez</a></li>
+            <li><a href="#">Doodhpathri</a></li>
+            <li><a href="ladakh.html">Leh – Ladakh</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa fa-map-marker-alt"></i
+            ><span>AR Complex Palpora, Near Danish Stadium, Srinagar</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-phone"></i
+            ><span>+91 70066 75853<br />+91 60054 66641</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-envelope"></i><span>vanityjourneys@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-clock"></i><span>Mon – Sat, 8:00 AM – 8:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 The Vanity Journeys. All rights reserved.</span>
+        <div class="footer-approved"><span>✦ J&K Tourism Approved</span></div>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/917006675853" class="wa-float" target="_blank"
+      ><i class="fab fa-whatsapp"></i
+    ></a>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 40);
+      });
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add("visible"), i * 90);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".  ")
+        .forEach((el) => observer.observe(el));
+
+      function toggleMenu() {
+        const links = document.querySelector(".nav-links");
+        if (links.style.display === "flex") {
+          links.style.display = "";
+        } else {
+          links.style.cssText =
+            "display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:white;padding:1.5rem 5%;box-shadow:0 12px 48px rgba(44,95,122,0.18);gap:1rem;z-index:999;";
+        }
+      }
+    </script>
+  </body>
+</html>
