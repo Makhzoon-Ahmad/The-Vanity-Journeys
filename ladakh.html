@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leh – Ladakh – The Vanity Journeys</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+ <link rel="stylesheet" href="destination.css"> 
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo"><img src="./assets/images/VanityLogo.png" alt="The Vanity Journeys"></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li class="nav-dropdown">
+      <a href="index.html#destinations">Destinations</a>
+      <div class="dropdown-menu">
+        <a href="#">Srinagar</a><a href="#">Gulmarg</a><a href="#">Pahalgam</a>
+        <a href="#">Doodhpathri</a><a href="#">Sonmarg</a><a href="#">Gurez</a>
+        <a href="#">Dal Lake</a><a href="#">Leh – Ladakh</a>
+      </div>
+    </li>
+    <li class="nav-dropdown">
+      <a href="packages.html">Packages</a>
+      <div class="dropdown-menu">
+        <a href="#option1">Kashmir 3N/4D</a>
+        <a href="#option2">Kashmir 4N/5D</a>
+        <a href="#option3">Kashmir 5N/6D</a>
+      </div>
+    </li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="index.html#faq">FAQs</a></li>
+    <li><a href="#cta" class="nav-cta">Book Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<!-- ─── HERO ─── -->
+<div class="dest-hero">
+  <div class="dest-hero-bg" style=" background:
+        linear-gradient(to bottom, rgba(26,61,80,0.25) 0%, rgba(26,61,80,0.85) 100%),
+        url('./assets/images/Ladakh/ladakh2.webp') center/cover;"></div>
+  <div class="dest-hero-content">
+    <div class="dest-hero-meta">
+      <div class="dest-hero-badge">✦ Destination Guide ✦</div>
+      <div class="dest-hero-region"><i class="fa fa-map-marker-alt"></i> Jammu & Kashmir, India</div>
+    </div>
+    <h1>Leh – <em>Ladakh</em></h1>
+    <p class="dest-hero-tagline">The Enchanting Land of Mystical Landscapes — where the world's coldest desert meets Himalayan peaks and ancient Buddhist culture.</p>
+    <div class="dest-hero-actions">
+      <a href="#cta" class="btn-primary">Plan Your Trip</a>
+      <a href="#about" class="btn-outline">Explore More</a>
+    </div>
+  </div>
+</div>
+
+<!-- ─── BREADCRUMB + QUICK FACTS ─── -->
+<div class="breadcrumb-bar">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <i class="fa fa-chevron-right"></i>
+    <a href="#">Destinations</a>
+    <i class="fa fa-chevron-right"></i>
+    <span>Leh – Ladakh</span>
+  </div>
+  <div class="dest-quick-facts">
+    <div class="dest-quick-fact"><i class="fa fa-thermometer-half"></i> World's Coldest Desert</div>
+    <div class="dest-quick-fact"><i class="fa fa-mountain"></i> 3,500m+ Altitude</div>
+    <div class="dest-quick-fact"><i class="fa fa-calendar-check"></i> Best: Jun – Sep</div>
+    <div class="dest-quick-fact"><i class="fa fa-plane"></i> Fly or Drive (Jun–Oct)</div>
+  </div>
+</div>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text fade-in">
+      <div class="section-tag">About the Destination</div>
+      <h2 class="section-title">Ladakh: Where Heaven Meets Earth</h2>
+      <p>Ladakh, a breathtaking union territory in northern India, was officially designated as a separate region on <strong>October 31, 2019</strong>. Stretching from the Siachen Glacier to the Great Himalayas, it is home to dramatic landscapes and is renowned as the <strong>world's coldest desert</strong>.</p>
+      <p>Adorned with stunning Tibetan Buddhist monasteries (Gompas), fluttering prayer flags, and whitewashed stupas, Ladakh is a vibrant fusion of intricate murals and red-robed monks. It is a land of stark contrasts, where one can experience both sunstroke and frostbite simultaneously while sitting in the sun with feet in the shade.</p>
+      <p>The warm and welcoming locals add to the region's charm, embracing a culture deeply rooted in <strong>Tibetan traditions</strong>. For adventure seekers, Ladakh is a paradise, offering thrilling rafting experiences and high-altitude trekking.</p>
+      <p>Often confused as a single entity, Ladakh is actually divided into <strong>two districts — Leh and Kargil</strong>. Leh, a major tourist hub, is known for its captivating monasteries, the serene Shanti Stupa, vibrant cafés, and the bustling Leh Bazaar, offering a glimpse into Ladakh's rich culture and heritage.</p>
+    </div>
+
+    <div class="about-sidebar fade-in">
+      <div class="info-card">
+        <div class="info-card-header"><i class="fa fa-info-circle"></i><h4>Key Facts</h4></div>
+        <ul>
+          <li>Designated a Union Territory on Oct 31, 2019</li>
+          <li>Divided into two districts: Leh & Kargil</li>
+          <li>World's coldest desert region</li>
+          <li>Altitude: 3,500m – 5,000m+</li>
+          <li>Road cut off Oct–May (air travel only)</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-header"><i class="fa fa-clock"></i><h4>Access & Travel</h4></div>
+        <ul>
+          <li>Fly into Kushok Bakula Rimpochhe Airport, Leh</li>
+          <li>Road accessible June to October only</li>
+          <li>Flights operate year-round from Delhi & Srinagar</li>
+          <li>Acclimatization of 1–2 days recommended on arrival</li>
+        </ul>
+      </div>
+
+      <div class="highlight-strip">
+        <h4>Must Experiences</h4>
+        <div class="highlight-item"><i class="fa fa-check-circle"></i><span>Chadar Trek on Frozen Zanskar River (Jan–Feb)</span></div>
+        <div class="highlight-item"><i class="fa fa-check-circle"></i><span>Pangong Tso Lake — the iconic blue waters</span></div>
+        <div class="highlight-item"><i class="fa fa-check-circle"></i><span>Monastery hopping — Hemis, Thiksey, Diskit</span></div>
+        <div class="highlight-item"><i class="fa fa-check-circle"></i><span>High-altitude rafting on Zanskar River</span></div>
+        <div class="highlight-item"><i class="fa fa-check-circle"></i><span>Magnetic Hill & Hall of Fame Museum</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GALLERY ─── -->
+<section id="gallery">
+  <div class="fade-in" style="text-align:center;">
+    <div class="section-tag">Photography</div>
+    <h2 class="section-title">A Glimpse of Ladakh</h2>
+    <p class="section-sub" style="max-width:500px;margin:0 auto;">Raw, rugged, and impossibly beautiful — every frame in Ladakh tells a story.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item tall fade-in">
+      <img src="./assets/images/Ladakh/ladakh4.webp" alt="Ladakh"/>
+    </div>
+    <div class="gallery-item wide fade-in">
+      <img src="./assets/images/Ladakh/ladakh3.webp" alt="Ladakh"/>
+    </div>
+    <div class="gallery-item fade-in">
+      <img src="./assets/images/Ladakh/ladakh1.webp" alt="Ladakh"/>
+    </div>
+    <div class="gallery-item fade-in">
+      <img src="./assets/images/Ladakh/ladakh6.jpg" alt="Ladakh"/>
+    </div>
+    <div class="gallery-item fade-in">
+      <img src="./assets/images/Ladakh/ladakh7.webp" alt="Ladakh"/>
+    </div>
+    <!-- <div class="gallery-item wide fade-in">
+      <img src="./assets/images/Ladakh/ladakh8.webp" alt="Ladakh"/>
+    </div> -->
+  </div>
+</section>
+
+<!-- ─── HIGHLIGHTS ─── -->
+<section id="highlights">
+  <div class="fade-in" style="text-align:center;">
+    <div class="section-tag">Why Visit</div>
+    <h2 class="section-title">What Makes Ladakh Special</h2>
+    <p class="section-sub" style="max-width:540px;margin:0 auto;">From ancient monasteries to frozen rivers, Ladakh is unlike anywhere else on Earth.</p>
+  </div>
+  <div class="highlights-grid">
+    <div class="highlight-card fade-in">
+      <div class="highlight-card-icon"><i class="fa fa-torii-gate"></i></div>
+      <h3>Tibetan Monasteries</h3>
+      <p>Discover ancient Gompas perched on cliffsides, adorned with intricate murals, thangkas, and red-robed monks chanting in centuries-old traditions.</p>
+    </div>
+    <div class="highlight-card fade-in">
+      <div class="highlight-card-icon"><i class="fa fa-water"></i></div>
+      <h3>Pangong Tso Lake</h3>
+      <p>The iconic high-altitude lake straddling India and China, known for its surreal blue waters that change colour through the day.</p>
+    </div>
+    <div class="highlight-card fade-in">
+      <div class="highlight-card-icon"><i class="fa fa-hiking"></i></div>
+      <h3>Adventure Trekking</h3>
+      <p>From the legendary Chadar Trek on the frozen Zanskar River in winter to high-altitude passes like Khardung La in summer.</p>
+    </div>
+    <div class="highlight-card fade-in">
+      <div class="highlight-card-icon"><i class="fa fa-star-and-crescent"></i></div>
+      <h3>Unique Culture</h3>
+      <p>Experience Ladakhi festivals, Losar celebrations, and the warm hospitality of locals deeply rooted in Tibetan Buddhist traditions.</p>
+    </div>
+    <div class="highlight-card fade-in">
+      <div class="highlight-card-icon"><i class="fa fa-wind"></i></div>
+      <h3>Nubra Valley</h3>
+      <p>Reach the "Valley of Flowers" via the world's highest motorable road. Ride double-humped Bactrian camels on the Hunder sand dunes.</p>
+    </div>
+    <div class="highlight-card fade-in">
+      <div class="highlight-card-icon"><i class="fa fa-camera"></i></div>
+      <h3>Surreal Landscapes</h3>
+      <p>A land of stark contrasts — barren moonscapes, sapphire lakes, snow-capped peaks, and golden sand dunes all within a single day's drive.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BEST TIME ─── -->
+<section id="best-time">
+  <div class="best-time-grid">
+    <div class="best-time-content fade-in">
+      <div class="section-tag">When to Visit</div>
+      <h2 class="section-title">Best Time to Visit Ladakh</h2>
+      <p class="section-sub">Ladakh's extreme altitude means each season offers a completely different experience. Choose your window carefully.</p>
+      <div class="season-cards" style="margin-top:1.75rem;">
+        <div class="season-card">
+          <div class="season-icon"><i class="fa fa-sun"></i></div>
+          <div>
+            <h4>Summer — June to September <span class="season-best">Best Season</span></h4>
+            <p>Clear skies, open roads, and ideal temperatures (10°C–25°C). All tourist attractions, monasteries and trekking routes fully accessible.</p>
+          </div>
+        </div>
+        <div class="season-card">
+          <div class="season-icon"><i class="fa fa-leaf"></i></div>
+          <div>
+            <h4>Autumn — October to November</h4>
+            <p>Cooler temperatures and thinner crowds. Beautiful autumn foliage. Roads close by late October — fly in for the experience.</p>
+          </div>
+        </div>
+        <div class="season-card">
+          <div class="season-icon"><i class="fa fa-snowflake"></i></div>
+          <div>
+            <h4>Winter — January to February <span class="season-best">Chadar Trek</span></h4>
+            <p>Extreme cold (−20°C to −30°C) but magical. The famous Chadar Trek on the frozen Zanskar River runs through this period.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips-box fade-in">
+      <h3>Travel Tips for Ladakh</h3>
+      <ul class="tips-list">
+        <li><i class="fa fa-check"></i> Spend your first 1–2 days resting on arrival to acclimatize to the altitude. Avoid strenuous activity immediately.</li>
+        <li><i class="fa fa-check"></i> Only postpaid mobile networks work in J&K — BSNL, Airtel, Vi, and Jio. Prepaid may not function.</li>
+        <li><i class="fa fa-check"></i> Carry warm layers even in summer — temperatures drop sharply after sunset at high altitude.</li>
+        <li><i class="fa fa-check"></i> Obtain Inner Line Permits (ILP) for restricted areas like Pangong, Nubra, and Tso Moriri in advance.</li>
+        <li><i class="fa fa-check"></i> Stay hydrated and avoid alcohol during the first few days — altitude sickness is real and should be taken seriously.</li>
+        <li><i class="fa fa-check"></i> Book your flights and hotels early — Ladakh fills up fast during peak season (July–August).</li>
+        <li><i class="fa fa-check"></i> Carry cash. ATMs are limited outside Leh city, especially in Nubra and Pangong areas.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── NEARBY DESTINATIONS ─── -->
+<section id="nearby">
+  <div class="fade-in" style="text-align:center;margin-bottom:0;">
+    <div class="section-tag">Also Explore</div>
+    <h2 class="section-title">Other Destinations Near Ladakh</h2>
+    <p class="section-sub" style="max-width:500px;margin:0 auto;">Pair your Ladakh trip with these stunning Kashmir destinations.</p>
+  </div>
+  <div class="nearby-grid">
+    <div class="nearby-card fade-in">
+      <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=500&q=80" alt="Dal Lake"/>
+      <div class="nearby-overlay">
+        <div class="nearby-name">Dal Lake</div>
+        <div class="nearby-tag">Srinagar · Houseboats · Shikaras</div>
+      </div>
+      <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
+    </div>
+    <div class="nearby-card fade-in">
+      <img src="https://images.unsplash.com/photo-1566837945700-30057527ade0?w=500&q=80" alt="Sonmarg"/>
+      <div class="nearby-overlay">
+        <div class="nearby-name">Sonmarg</div>
+        <div class="nearby-tag">Meadow of Gold · Glacier Trek</div>
+      </div>
+      <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
+    </div>
+    <div class="nearby-card fade-in">
+      <img src="https://images.unsplash.com/photo-1582650625119-3a31f8fa2699?w=500&q=80" alt="Gulmarg"/>
+      <div class="nearby-overlay">
+        <div class="nearby-name">Gulmarg</div>
+        <div class="nearby-tag">Snow · Gondola · Skiing</div>
+      </div>
+      <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
+    </div>
+    <div class="nearby-card fade-in">
+      <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=500&q=80" alt="Pahalgam"/>
+      <div class="nearby-overlay">
+        <div class="nearby-name">Pahalgam</div>
+        <div class="nearby-tag">Valley · River · Trekking</div>
+      </div>
+      <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section id="cta">
+  <div class="fade-in">
+    <h2>Ready to Explore Ladakh?</h2>
+    <p>Let us plan your perfect Ladakh trip — customized itinerary, comfortable stays, and hassle-free travel from Srinagar.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/917006675853?text=Hi%2C%20I%27m%20interested%20in%20a%20Leh-Ladakh%20tour%20package" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      <a href="tel:+917006675853" class="btn-call"><i class="fa fa-phone"></i> Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">The Vanity <span>Journeys</span></span>
+      <p>Your trusted travel partner in Kashmir. We craft unforgettable journeys through the most beautiful landscapes in the world — one memory at a time.</p>
+      <div class="footer-socials">
+        <a href="https://instagram.com/thevanityjourneys" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/917006675853" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:vanityjourneys@gmail.com"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="index.html#faq">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Destinations</h4>
+      <ul>
+        <li><a href="#">Srinagar</a></li>
+        <li><a href="#">Gulmarg</a></li>
+        <li><a href="#">Pahalgam</a></li>
+        <li><a href="#">Dal Lake</a></li>
+        <li><a href="destination.html">Leh – Ladakh</a></li>
+        <li><a href="#">Sonmarg</a></li>
+        <li><a href="#">Gurez</a></li>
+        <li><a href="#">Doodhpathri</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-item"><i class="fa fa-map-marker-alt"></i><span>AR Complex Palpora, Near Danish Stadium, Srinagar</span></div>
+      <div class="footer-contact-item"><i class="fa fa-phone"></i><span>+91 70066 75853<br/>+91 60054 66641</span></div>
+      <div class="footer-contact-item"><i class="fa fa-envelope"></i><span>vanityjourneys@gmail.com</span></div>
+      <div class="footer-contact-item"><i class="fa fa-clock"></i><span>Mon – Sat, 8:00 AM – 8:00 PM</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 The Vanity Journeys. All rights reserved.</span>
+    <div class="footer-approved"><span>✦ J&K Tourism Approved</span></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917006675853" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 40); });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 90);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    if (links.style.display === 'flex') {
+      links.style.display = '';
+    } else {
+      links.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:white;padding:1.5rem 5%;box-shadow:0 12px 48px rgba(44,95,122,0.18);gap:1rem;z-index:999;';
+    }
+  }
+</script>
+</body>
+</html>
