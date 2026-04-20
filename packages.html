@@ -1,723 +1,2180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tour Packages – The Vanity Journeys</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <link rel="stylesheet" href="packages.css">
-</head>
-<body>
-
-<!-- NAVBAR -->
-<nav id="navbar">
-  <a href="index.html" class="nav-logo"><img src="./assets/images/VanityLogo.png" alt="The Vanity Journeys"></a>
-  <ul class="nav-links">
-    <li><a href="index.html#about">About</a></li>
-    <li class="nav-dropdown">
-      <a href="index.html#destinations">Destinations</a>
-      <div class="dropdown-menu">
-        <a href="srinagar.html">Srinagar</a><a href="gulmarg.html">Gulmarg</a><a href="pahalgam.html">Pahalgam</a>
-        <a href="#">Doodhpathri</a><a href="sonmarg.html">Sonmarg</a><a href="gurez.html">Gurez</a>
-        <a href="dallake.html">Dal Lake</a><a href="ladakh.html">Leh – Ladakh</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Packages – The Vanity Journeys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="packages.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <a href="index.html" class="nav-logo"
+        ><img src="./assets/images/VanityLogo.png" alt="The Vanity Journeys"
+      /></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li class="nav-dropdown">
+          <a href="index.html#destinations">Destinations</a>
+          <div class="dropdown-menu">
+            <a href="srinagar.html">Srinagar</a
+            ><a href="gulmarg.html">Gulmarg</a
+            ><a href="pahalgam.html">Pahalgam</a> <a href="#">Doodhpathri</a
+            ><a href="sonmarg.html">Sonmarg</a><a href="gurez.html">Gurez</a>
+            <a href="dallake.html">Dal Lake</a
+            ><a href="ladakh.html">Leh – Ladakh</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="packages.html">Packages</a>
+          <div class="dropdown-menu">
+            <a href="#option1">Kashmir 3N/4D</a>
+            <a href="#option2">Kashmir 4N/5D</a>
+            <a href="#option3">Kashmir 5N/6D</a>
+          </div>
+        </li>
+        <li><a href="index.html#faq">FAQs</a></li>
+        <li><a href="#cta" class="nav-cta">Book Now</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
       </div>
-    </li>
-    <li class="nav-dropdown">
-      <a href="packages.html">Packages</a>
-      <div class="dropdown-menu">
-        <a href="#option1">Kashmir 3N/4D</a>
-        <a href="#option2">Kashmir 4N/5D</a>
-        <a href="#option3">Kashmir 5N/6D</a>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="page-hero-bg"></div>
+      <div class="page-hero-content">
+        <div class="page-hero-badge">✦ Choose Your Journey ✦</div>
+        <h1>Tour Packages</h1>
+        <p>
+          Handcrafted Kashmir experiences for every traveler — from quick
+          getaways to immersive week-long adventures.
+        </p>
       </div>
-    </li>
-    <li><a href="index.html#faq">FAQs</a></li>
-    <li><a href="#cta" class="nav-cta">Book Now</a></li>
-  </ul>
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="page-hero-bg"></div>
-  <div class="page-hero-content">
-    <div class="page-hero-badge">✦ Choose Your Journey ✦</div>
-    <h1>Tour Packages</h1>
-    <p>Handcrafted Kashmir experiences for every traveler — from quick getaways to immersive week-long adventures.</p>
-  </div>
-  <div class="breadcrumb">
-    <a href="index.html">Home</a>
-    <i class="fa fa-chevron-right"></i>
-    <span>Tour Packages</span>
-  </div>
-</div>
-
-<section class="pkg-section" id="option1">
-  <div class="pkg-section-header fade-in">
-    <div class="pkg-duration-badge"><i class="fa fa-calendar-alt"></i> 3 Nights / 4 Days</div>
-    <div class="section-tag">Option 1</div>
-    <h2 class="section-title">Kashmir Quick Explorer</h2>
-    <p class="section-sub" style="max-width:580px;margin:0 auto;">Srinagar · Sonamarg · Gulmarg — A perfect short getaway covering Kashmir's most iconic spots.</p>
-  </div>
-
-  <div class="pkg-cards-row">
-    <!-- 3 Star -->
-    <div class="pkg-card fade-in">
-      <div class="pkg-card-img">
-        <img src="./assets/images/tour-dest1.jpeg" alt="3 Star Package"/>
-        <div class="pkg-card-badge">3 Star</div>
-        <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-      </div>
-      <div class="pkg-card-body">
-        <div class="pkg-card-tag">Option 1</div>
-        <div class="pkg-card-title">Kashmir Explorer</div>
-        <div class="pkg-card-price">₹9,100<span>/per person</span></div>
-        <div class="pkg-card-duration"><i class="fa fa-moon"></i> 3 Nights / 4 Days &nbsp;·&nbsp; <i class="fa fa-users"></i> 2 Pax (Etios)</div>
-        <ul class="pkg-highlights">
-          <li><i class="fa fa-check-circle"></i> Dal Lake, Mughal Gardens, Hazratbal Shrine</li>
-          <li><i class="fa fa-check-circle"></i> Full day Sonamarg — Thajiwas Glacier</li>
-          <li><i class="fa fa-check-circle"></i> Full day Gulmarg — Gondola Cable Car</li>
-          <li><i class="fa fa-check-circle"></i> Hotel arbiya villa / primeland / similar</li>
-          <li><i class="fa fa-check-circle"></i> MAPAI (Breakfast & Dinner)</li>
-        </ul>
-        <div class="pkg-card-actions">
-          <button class="btn-view" onclick="openModal('modal-opt1-3star')">View Details</button>
-          <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20(3N%2F4D)%20-%203%20Star%20package" class="btn-book" target="_blank">Book Now</a>
-        </div>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa fa-chevron-right"></i>
+        <span>Tour Packages</span>
       </div>
     </div>
 
-    <!-- 3 Star Premium -->
-    <div class="pkg-card fade-in" style="border: 2px solid var(--accent);">
-      <div class="pkg-card-img">
-        <img src="./assets/images/tour-dest2.jpeg" alt="3 Star Premium"/>
-        <div class="pkg-card-badge" style="background:var(--primary);color:var(--white);">Most Popular</div>
-        <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+    <section class="pkg-section" id="option1">
+      <div class="pkg-section-header fade-in">
+        <div class="pkg-duration-badge">
+          <i class="fa fa-calendar-alt"></i> 3 Nights / 4 Days
+        </div>
+        <div class="section-tag">Option 1</div>
+        <h2 class="section-title">Kashmir Quick Explorer</h2>
+        <p class="section-sub" style="max-width: 580px; margin: 0 auto">
+          Srinagar · Sonamarg · Gulmarg — A perfect short getaway covering
+          Kashmir's most iconic spots.
+        </p>
       </div>
-      <div class="pkg-card-body">
-        <div class="pkg-card-tag">Option 1</div>
-        <div class="pkg-card-title">Kashmir Premium</div>
-        <div class="pkg-card-price">₹9,850<span>/per person</span></div>
-        <div class="pkg-card-duration"><i class="fa fa-moon"></i> 3 Nights / 4 Days &nbsp;·&nbsp; <i class="fa fa-users"></i> 2 Pax (Etios)</div>
-        <ul class="pkg-highlights">
-          <li><i class="fa fa-check-circle"></i> Dal Lake, Mughal Gardens, Hazratbal Shrine</li>
-          <li><i class="fa fa-check-circle"></i> Full day Sonamarg — Thajiwas Glacier</li>
-          <li><i class="fa fa-check-circle"></i> Full day Gulmarg — Gondola Cable Car</li>
-          <li><i class="fa fa-check-circle"></i> Hotel Midtown Greens / Heritage Luxury / similar</li>
-          <li><i class="fa fa-check-circle"></i> MAPAI (Breakfast & Dinner)</li>
-        </ul>
-        <div class="pkg-card-actions">
-          <button class="btn-view" onclick="openModal('modal-opt1-3star-prem')">View Details</button>
-          <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20(3N%2F4D)%20-%203%20Star%20Premium" class="btn-book" target="_blank">Book Now</a>
+
+      <div class="pkg-cards-row">
+        <!-- 3 Star -->
+        <div class="pkg-card fade-in">
+          <div class="pkg-card-img">
+            <img src="./assets/images/tour-dest1.jpeg" alt="3 Star Package" />
+            <div class="pkg-card-badge">3 Star</div>
+            <div class="pkg-card-star">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="pkg-card-body">
+            <div class="pkg-card-tag">Option 1</div>
+            <div class="pkg-card-title">Kashmir Explorer</div>
+            <div class="pkg-card-price">₹9,100<span>/per person</span></div>
+            <div class="pkg-card-duration">
+              <i class="fa fa-moon"></i> 3 Nights / 4 Days &nbsp;·&nbsp;
+              <i class="fa fa-users"></i> 2 Pax (Etios)
+            </div>
+            <ul class="pkg-highlights">
+              <li>
+                <i class="fa fa-check-circle"></i> Dal Lake, Mughal Gardens,
+                Hazratbal Shrine
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Full day Sonamarg — Thajiwas
+                Glacier
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Full day Gulmarg — Gondola
+                Cable Car
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Hotel arbiya villa /
+                primeland / similar
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> MAPAI (Breakfast & Dinner)
+              </li>
+            </ul>
+            <div class="pkg-card-actions">
+              <button class="btn-view" onclick="openModal('modal-opt1-3star')">
+                View Details
+              </button>
+              <a
+                href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20(3N%2F4D)%20-%203%20Star%20package"
+                class="btn-book"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Star Premium -->
+        <div class="pkg-card fade-in" style="border: 2px solid var(--accent)">
+          <div class="pkg-card-img">
+            <img src="./assets/images/tour-dest2.jpeg" alt="3 Star Premium" />
+            <div
+              class="pkg-card-badge"
+              style="background: var(--primary); color: var(--white)"
+            >
+              Most Popular
+            </div>
+            <div class="pkg-card-star">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="pkg-card-body">
+            <div class="pkg-card-tag">Option 1</div>
+            <div class="pkg-card-title">Kashmir Premium</div>
+            <div class="pkg-card-price">₹9,850<span>/per person</span></div>
+            <div class="pkg-card-duration">
+              <i class="fa fa-moon"></i> 3 Nights / 4 Days &nbsp;·&nbsp;
+              <i class="fa fa-users"></i> 2 Pax (Etios)
+            </div>
+            <ul class="pkg-highlights">
+              <li>
+                <i class="fa fa-check-circle"></i> Dal Lake, Mughal Gardens,
+                Hazratbal Shrine
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Full day Sonamarg — Thajiwas
+                Glacier
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Full day Gulmarg — Gondola
+                Cable Car
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Hotel Midtown Greens /
+                Heritage Luxury / similar
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> MAPAI (Breakfast & Dinner)
+              </li>
+            </ul>
+            <div class="pkg-card-actions">
+              <button
+                class="btn-view"
+                onclick="openModal('modal-opt1-3star-prem')"
+              >
+                View Details
+              </button>
+              <a
+                href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20(3N%2F4D)%20-%203%20Star%20Premium"
+                class="btn-book"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Star -->
+        <div class="pkg-card fade-in">
+          <div class="pkg-card-img">
+            <img src="./assets/images/tour-dest3.jpeg" alt="4 Star Package" />
+            <div
+              class="pkg-card-badge"
+              style="background: var(--primary-dark); color: var(--white)"
+            >
+              4 Star
+            </div>
+            <div class="pkg-card-star">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="pkg-card-body">
+            <div class="pkg-card-tag">Option 1</div>
+            <div class="pkg-card-title">Kashmir Luxury</div>
+            <div class="pkg-card-price">₹13,600<span>/per person</span></div>
+            <div class="pkg-card-duration">
+              <i class="fa fa-moon"></i> 3 Nights / 4 Days &nbsp;·&nbsp;
+              <i class="fa fa-users"></i> 2 Pax (Etios)
+            </div>
+            <ul class="pkg-highlights">
+              <li>
+                <i class="fa fa-check-circle"></i> Dal Lake, Mughal Gardens,
+                Hazratbal Shrine
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Full day Sonamarg — Thajiwas
+                Glacier
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Full day Gulmarg — Gondola
+                Cable Car
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Hotel Downtown / Grand Kaiser
+                / Rose Petal
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> MAPAI (Breakfast & Dinner)
+              </li>
+            </ul>
+            <div class="pkg-card-actions">
+              <button class="btn-view" onclick="openModal('modal-opt1-4star')">
+                View Details
+              </button>
+              <a
+                href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20(3N%2F4D)%20-%204%20Star%20Luxury"
+                class="btn-book"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- 4 Star -->
-    <div class="pkg-card fade-in">
-      <div class="pkg-card-img">
-        <img src="./assets/images/tour-dest3.jpeg" alt="4 Star Package"/>
-        <div class="pkg-card-badge" style="background:var(--primary-dark);color:var(--white);">4 Star</div>
-        <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-      </div>
-      <div class="pkg-card-body">
-        <div class="pkg-card-tag">Option 1</div>
-        <div class="pkg-card-title">Kashmir Luxury</div>
-        <div class="pkg-card-price">₹13,600<span>/per person</span></div>
-        <div class="pkg-card-duration"><i class="fa fa-moon"></i> 3 Nights / 4 Days &nbsp;·&nbsp; <i class="fa fa-users"></i> 2 Pax (Etios)</div>
-        <ul class="pkg-highlights">
-          <li><i class="fa fa-check-circle"></i> Dal Lake, Mughal Gardens, Hazratbal Shrine</li>
-          <li><i class="fa fa-check-circle"></i> Full day Sonamarg — Thajiwas Glacier</li>
-          <li><i class="fa fa-check-circle"></i> Full day Gulmarg — Gondola Cable Car</li>
-          <li><i class="fa fa-check-circle"></i> Hotel Downtown / Grand Kaiser / Rose Petal</li>
-          <li><i class="fa fa-check-circle"></i> MAPAI (Breakfast & Dinner)</li>
-        </ul>
-        <div class="pkg-card-actions">
-          <button class="btn-view" onclick="openModal('modal-opt1-4star')">View Details</button>
-          <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20(3N%2F4D)%20-%204%20Star%20Luxury" class="btn-book" target="_blank">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════
+    <!-- ═══════════════════════════════
      OPTION 2 — 4 Nights / 5 Days
 ════════════════════════════════ -->
-<section class="pkg-section" id="option2">
-  <div class="pkg-section-header fade-in">
-    <div class="pkg-duration-badge"><i class="fa fa-calendar-alt"></i> 4 Nights / 5 Days</div>
-    <div class="section-tag">Option 2</div>
-    <h2 class="section-title">Kashmir Valley Tour</h2>
-    <p class="section-sub" style="max-width:580px;margin:0 auto;">Srinagar · Sonamarg · Gulmarg · Pahalgam — A well-rounded tour through Kashmir's valleys and peaks.</p>
-  </div>
-
-  <div class="pkg-cards-row">
-    <div class="pkg-card fade-in">
-      <div class="pkg-card-img">
-        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=700&q=80" alt="3 Star"/>
-        <div class="pkg-card-badge">3 Star</div>
-        <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+    <section class="pkg-section" id="option2">
+      <div class="pkg-section-header fade-in">
+        <div class="pkg-duration-badge">
+          <i class="fa fa-calendar-alt"></i> 4 Nights / 5 Days
+        </div>
+        <div class="section-tag">Option 2</div>
+        <h2 class="section-title">Kashmir Valley Tour</h2>
+        <p class="section-sub" style="max-width: 580px; margin: 0 auto">
+          Srinagar · Sonamarg · Gulmarg · Pahalgam — A well-rounded tour through
+          Kashmir's valleys and peaks.
+        </p>
       </div>
-      <div class="pkg-card-body">
-        <div class="pkg-card-tag">Option 2</div>
-        <div class="pkg-card-title">Valley Explorer</div>
-        <div class="pkg-card-price">₹11,600<span>/per person</span></div>
-        <div class="pkg-card-duration"><i class="fa fa-moon"></i> 4 Nights / 5 Days &nbsp;·&nbsp; <i class="fa fa-users"></i> 2 Pax (Etios)</div>
-        <ul class="pkg-highlights">
-          <li><i class="fa fa-check-circle"></i> Shikara ride on Dal Lake</li>
-          <li><i class="fa fa-check-circle"></i> Sonamarg — glacier walks, pony ride</li>
-          <li><i class="fa fa-check-circle"></i> Gulmarg — gondola ride (optional)</li>
-          <li><i class="fa fa-check-circle"></i> Pahalgam — Betaab Valley, Chandanwari</li>
-          <li><i class="fa fa-check-circle"></i> Hotel arbiya villa / primeland / similar</li>
-        </ul>
-        <div class="pkg-card-actions">
-          <button class="btn-view" onclick="openModal('modal-opt2-3star')">View Details</button>
-          <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%203%20Star" class="btn-book" target="_blank">Book Now</a>
+
+      <div class="pkg-cards-row">
+        <div class="pkg-card fade-in">
+          <div class="pkg-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=700&q=80"
+              alt="3 Star"
+            />
+            <div class="pkg-card-badge">3 Star</div>
+            <div class="pkg-card-star">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="pkg-card-body">
+            <div class="pkg-card-tag">Option 2</div>
+            <div class="pkg-card-title">Valley Explorer</div>
+            <div class="pkg-card-price">₹11,600<span>/per person</span></div>
+            <div class="pkg-card-duration">
+              <i class="fa fa-moon"></i> 4 Nights / 5 Days &nbsp;·&nbsp;
+              <i class="fa fa-users"></i> 2 Pax (Etios)
+            </div>
+            <ul class="pkg-highlights">
+              <li>
+                <i class="fa fa-check-circle"></i> Shikara ride on Dal Lake
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Sonamarg — glacier walks,
+                pony ride
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Gulmarg — gondola ride
+                (optional)
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Pahalgam — Betaab Valley,
+                Chandanwari
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Hotel arbiya villa /
+                primeland / similar
+              </li>
+            </ul>
+            <div class="pkg-card-actions">
+              <button class="btn-view" onclick="openModal('modal-opt2-3star')">
+                View Details
+              </button>
+              <a
+                href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%203%20Star"
+                class="btn-book"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card fade-in" style="border: 2px solid var(--accent)">
+          <div class="pkg-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=700&q=80"
+              alt="3 Star Premium"
+            />
+            <div
+              class="pkg-card-badge"
+              style="background: var(--primary); color: var(--white)"
+            >
+              Most Popular
+            </div>
+            <div class="pkg-card-star">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="pkg-card-body">
+            <div class="pkg-card-tag">Option 2</div>
+            <div class="pkg-card-title">Valley Premium</div>
+            <div class="pkg-card-price">₹12,600<span>/per person</span></div>
+            <div class="pkg-card-duration">
+              <i class="fa fa-moon"></i> 4 Nights / 5 Days &nbsp;·&nbsp;
+              <i class="fa fa-users"></i> 2 Pax (Etios)
+            </div>
+            <ul class="pkg-highlights">
+              <li>
+                <i class="fa fa-check-circle"></i> Shikara ride on Dal Lake
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Sonamarg — glacier walks,
+                pony ride
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Gulmarg — gondola ride
+                (optional)
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Pahalgam — Betaab Valley,
+                Chandanwari
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Hotel Midtown Greens /
+                Heritage Luxury
+              </li>
+            </ul>
+            <div class="pkg-card-actions">
+              <button
+                class="btn-view"
+                onclick="openModal('modal-opt2-3star-prem')"
+              >
+                View Details
+              </button>
+              <a
+                href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%203%20Star%20Premium"
+                class="btn-book"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card fade-in">
+          <div class="pkg-card-img">
+            <img src="./assets/images/tour-dest4.jpeg" alt="4 Star" />
+            <div
+              class="pkg-card-badge"
+              style="background: var(--primary-dark); color: var(--white)"
+            >
+              4 Star
+            </div>
+            <div class="pkg-card-star">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="pkg-card-body">
+            <div class="pkg-card-tag">Option 2</div>
+            <div class="pkg-card-title">Valley Luxury</div>
+            <div class="pkg-card-price">₹17,600<span>/per person</span></div>
+            <div class="pkg-card-duration">
+              <i class="fa fa-moon"></i> 4 Nights / 5 Days &nbsp;·&nbsp;
+              <i class="fa fa-users"></i> 2 Pax (Etios)
+            </div>
+            <ul class="pkg-highlights">
+              <li>
+                <i class="fa fa-check-circle"></i> Shikara ride on Dal Lake
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Sonamarg — glacier walks,
+                pony ride
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Gulmarg — gondola ride
+                (optional)
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Pahalgam — Betaab Valley,
+                Chandanwari
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Hotel Downtown / Grand Kaiser
+                / Rose Petal
+              </li>
+            </ul>
+            <div class="pkg-card-actions">
+              <button class="btn-view" onclick="openModal('modal-opt2-4star')">
+                View Details
+              </button>
+              <a
+                href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%204%20Star"
+                class="btn-book"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="pkg-card fade-in" style="border: 2px solid var(--accent);">
-      <div class="pkg-card-img">
-        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=700&q=80" alt="3 Star Premium"/>
-        <div class="pkg-card-badge" style="background:var(--primary);color:var(--white);">Most Popular</div>
-        <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-      </div>
-      <div class="pkg-card-body">
-        <div class="pkg-card-tag">Option 2</div>
-        <div class="pkg-card-title">Valley Premium</div>
-        <div class="pkg-card-price">₹12,600<span>/per person</span></div>
-        <div class="pkg-card-duration"><i class="fa fa-moon"></i> 4 Nights / 5 Days &nbsp;·&nbsp; <i class="fa fa-users"></i> 2 Pax (Etios)</div>
-        <ul class="pkg-highlights">
-          <li><i class="fa fa-check-circle"></i> Shikara ride on Dal Lake</li>
-          <li><i class="fa fa-check-circle"></i> Sonamarg — glacier walks, pony ride</li>
-          <li><i class="fa fa-check-circle"></i> Gulmarg — gondola ride (optional)</li>
-          <li><i class="fa fa-check-circle"></i> Pahalgam — Betaab Valley, Chandanwari</li>
-          <li><i class="fa fa-check-circle"></i> Hotel Midtown Greens / Heritage Luxury</li>
-        </ul>
-        <div class="pkg-card-actions">
-          <button class="btn-view" onclick="openModal('modal-opt2-3star-prem')">View Details</button>
-          <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%203%20Star%20Premium" class="btn-book" target="_blank">Book Now</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pkg-card fade-in">
-      <div class="pkg-card-img">
-        <img src="./assets/images/tour-dest4.jpeg" alt="4 Star"/>
-        <div class="pkg-card-badge" style="background:var(--primary-dark);color:var(--white);">4 Star</div>
-        <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-      </div>
-      <div class="pkg-card-body">
-        <div class="pkg-card-tag">Option 2</div>
-        <div class="pkg-card-title">Valley Luxury</div>
-        <div class="pkg-card-price">₹17,600<span>/per person</span></div>
-        <div class="pkg-card-duration"><i class="fa fa-moon"></i> 4 Nights / 5 Days &nbsp;·&nbsp; <i class="fa fa-users"></i> 2 Pax (Etios)</div>
-        <ul class="pkg-highlights">
-          <li><i class="fa fa-check-circle"></i> Shikara ride on Dal Lake</li>
-          <li><i class="fa fa-check-circle"></i> Sonamarg — glacier walks, pony ride</li>
-          <li><i class="fa fa-check-circle"></i> Gulmarg — gondola ride (optional)</li>
-          <li><i class="fa fa-check-circle"></i> Pahalgam — Betaab Valley, Chandanwari</li>
-          <li><i class="fa fa-check-circle"></i> Hotel Downtown / Grand Kaiser / Rose Petal</li>
-        </ul>
-        <div class="pkg-card-actions">
-          <button class="btn-view" onclick="openModal('modal-opt2-4star')">View Details</button>
-          <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%204%20Star" class="btn-book" target="_blank">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════
+    <!-- ═══════════════════════════════
      OPTION 3 — 5 Nights / 6 Days
 ════════════════════════════════ -->
-<section class="pkg-section" id="option3">
-  <div class="pkg-section-header fade-in">
-    <div class="pkg-duration-badge"><i class="fa fa-calendar-alt"></i> 5 Nights / 6 Days</div>
-    <div class="section-tag">Option 3</div>
-    <h2 class="section-title">Kashmir Grand Tour</h2>
-    <p class="section-sub" style="max-width:580px;margin:0 auto;">Srinagar · Sonamarg · Gulmarg · Pahalgam (overnight) — The ultimate Kashmir experience with an overnight stay in Pahalgam.</p>
-  </div>
-
-  <div class="pkg-cards-row">
-    <div class="pkg-card fade-in">
-      <div class="pkg-card-img">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80" alt="3 Star"/>
-        <div class="pkg-card-badge">3 Star</div>
-        <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+    <section class="pkg-section" id="option3">
+      <div class="pkg-section-header fade-in">
+        <div class="pkg-duration-badge">
+          <i class="fa fa-calendar-alt"></i> 5 Nights / 6 Days
+        </div>
+        <div class="section-tag">Option 3</div>
+        <h2 class="section-title">Kashmir Grand Tour</h2>
+        <p class="section-sub" style="max-width: 580px; margin: 0 auto">
+          Srinagar · Sonamarg · Gulmarg · Pahalgam (overnight) — The ultimate
+          Kashmir experience with an overnight stay in Pahalgam.
+        </p>
       </div>
-      <div class="pkg-card-body">
-        <div class="pkg-card-tag">Option 3</div>
-        <div class="pkg-card-title">Grand Explorer</div>
-        <div class="pkg-card-price">₹14,400<span>/per person</span></div>
-        <div class="pkg-card-duration"><i class="fa fa-moon"></i> 5 Nights / 6 Days &nbsp;·&nbsp; <i class="fa fa-users"></i> 2 Pax (Etios)</div>
-        <ul class="pkg-highlights">
-          <li><i class="fa fa-check-circle"></i> Srinagar local sightseeing + Mughal Gardens</li>
-          <li><i class="fa fa-check-circle"></i> Sonamarg full day excursion</li>
-          <li><i class="fa fa-check-circle"></i> Gulmarg — Gondola + meadows</li>
-          <li><i class="fa fa-check-circle"></i> Pahalgam overnight stay — Betaab Valley</li>
-          <li><i class="fa fa-check-circle"></i> Hotel arbiya villa / twin towers / similar</li>
-        </ul>
-        <div class="pkg-card-actions">
-          <button class="btn-view" onclick="openModal('modal-opt3-3star')">View Details</button>
-          <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%203%20Star" class="btn-book" target="_blank">Book Now</a>
+
+      <div class="pkg-cards-row">
+        <div class="pkg-card fade-in">
+          <div class="pkg-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80"
+              alt="3 Star"
+            />
+            <div class="pkg-card-badge">3 Star</div>
+            <div class="pkg-card-star">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="pkg-card-body">
+            <div class="pkg-card-tag">Option 3</div>
+            <div class="pkg-card-title">Grand Explorer</div>
+            <div class="pkg-card-price">₹14,400<span>/per person</span></div>
+            <div class="pkg-card-duration">
+              <i class="fa fa-moon"></i> 5 Nights / 6 Days &nbsp;·&nbsp;
+              <i class="fa fa-users"></i> 2 Pax (Etios)
+            </div>
+            <ul class="pkg-highlights">
+              <li>
+                <i class="fa fa-check-circle"></i> Srinagar local sightseeing +
+                Mughal Gardens
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Sonamarg full day excursion
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Gulmarg — Gondola + meadows
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Pahalgam overnight stay —
+                Betaab Valley
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Hotel arbiya villa / twin
+                towers / similar
+              </li>
+            </ul>
+            <div class="pkg-card-actions">
+              <button class="btn-view" onclick="openModal('modal-opt3-3star')">
+                View Details
+              </button>
+              <a
+                href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%203%20Star"
+                class="btn-book"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card fade-in" style="border: 2px solid var(--accent)">
+          <div class="pkg-card-img">
+            <img src="./assets/images/tour-dest5.jpeg" alt="3 Star Premium" />
+            <div
+              class="pkg-card-badge"
+              style="background: var(--primary); color: var(--white)"
+            >
+              Most Popular
+            </div>
+            <div class="pkg-card-star">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="pkg-card-body">
+            <div class="pkg-card-tag">Option 3</div>
+            <div class="pkg-card-title">Grand Premium</div>
+            <div class="pkg-card-price">₹15,600<span>/per person</span></div>
+            <div class="pkg-card-duration">
+              <i class="fa fa-moon"></i> 5 Nights / 6 Days &nbsp;·&nbsp;
+              <i class="fa fa-users"></i> 2 Pax (Etios)
+            </div>
+            <ul class="pkg-highlights">
+              <li>
+                <i class="fa fa-check-circle"></i> Srinagar local sightseeing +
+                Mughal Gardens
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Sonamarg full day excursion
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Gulmarg — Gondola + meadows
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Pahalgam overnight stay —
+                Betaab Valley
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Hotel Midtown Greens /
+                Heritage Luxury
+              </li>
+            </ul>
+            <div class="pkg-card-actions">
+              <button
+                class="btn-view"
+                onclick="openModal('modal-opt3-3star-prem')"
+              >
+                View Details
+              </button>
+              <a
+                href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%203%20Star%20Premium"
+                class="btn-book"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card fade-in">
+          <div class="pkg-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=700&q=80"
+              alt="4 Star"
+            />
+            <div
+              class="pkg-card-badge"
+              style="background: var(--primary-dark); color: var(--white)"
+            >
+              4 Star
+            </div>
+            <div class="pkg-card-star">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="pkg-card-body">
+            <div class="pkg-card-tag">Option 3</div>
+            <div class="pkg-card-title">Grand Luxury</div>
+            <div class="pkg-card-price">₹22,400<span>/per person</span></div>
+            <div class="pkg-card-duration">
+              <i class="fa fa-moon"></i> 5 Nights / 6 Days &nbsp;·&nbsp;
+              <i class="fa fa-users"></i> 2 Pax (Etios)
+            </div>
+            <ul class="pkg-highlights">
+              <li>
+                <i class="fa fa-check-circle"></i> Srinagar local sightseeing +
+                Mughal Gardens
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Sonamarg full day excursion
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Gulmarg — Gondola + meadows
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Pahalgam overnight stay —
+                Betaab Valley
+              </li>
+              <li>
+                <i class="fa fa-check-circle"></i> Hotel Downtown / Grand Kaiser
+                / Rose Petal
+              </li>
+            </ul>
+            <div class="pkg-card-actions">
+              <button class="btn-view" onclick="openModal('modal-opt3-4star')">
+                View Details
+              </button>
+              <a
+                href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%204%20Star%20Luxury"
+                class="btn-book"
+                target="_blank"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── INCLUDES / EXCLUDES ─── -->
+    <section class="incl-section">
+      <div style="text-align: center; margin-bottom: 2rem">
+        <div class="section-tag">What's Covered</div>
+        <h2 class="section-title">Cost Includes & Excludes</h2>
+      </div>
+      <div class="incl-grid">
+        <div class="incl-box green fade-in">
+          <h3><i class="fa fa-check-circle"></i> Cost Includes</h3>
+          <ul class="incl-list">
+            <li>
+              <i class="fa fa-check"></i> Accommodation on double sharing basis
+            </li>
+            <li><i class="fa fa-check"></i> Welcome drink on arrival</li>
+            <li>
+              <i class="fa fa-check"></i> Meal plan — Breakfast & Dinner (MAPAI)
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Pickup & drop at Srinagar Airport
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Meet and greet on arrival with placard
+            </li>
+            <li>
+              <i class="fa fa-check"></i> All transfers, sightseeing &
+              excursions by private cab
+            </li>
+            <li>
+              <i class="fa fa-check"></i> Driver allowances, toll tax & state
+              tax
+            </li>
+            <li><i class="fa fa-check"></i> All applicable taxes</li>
+            <li><i class="fa fa-check"></i> Doctor on call 24/7</li>
+            <li>
+              <i class="fa fa-check"></i> All days private cab throughout the
+              tour
+            </li>
+          </ul>
+        </div>
+        <div class="incl-box red fade-in">
+          <h3><i class="fa fa-times-circle"></i> Cost Excludes</h3>
+          <ul class="incl-list">
+            <li>
+              <i class="fa fa-times"></i> Airfare / train fare, tips, drinks &
+              lunch
+            </li>
+            <li><i class="fa fa-times"></i> Laundry, telephone charges</li>
+            <li>
+              <i class="fa fa-times"></i> Horse riding & extra adventure
+              activities
+            </li>
+            <li><i class="fa fa-times"></i> Shikara ride on Dal Lake</li>
+            <li>
+              <i class="fa fa-times"></i> Gondola Cable Car charges (Phase I:
+              ₹850/p.p, Phase II: ₹1,050/p.p)
+            </li>
+            <li>
+              <i class="fa fa-times"></i> Sumo for sightseeing Aru, Betaab &
+              Chandanwari in Pahalgam
+            </li>
+            <li>
+              <i class="fa fa-times"></i> Entry fees — Mughal Gardens / Betaab
+              Valley (₹50–100/p.p)
+            </li>
+            <li>
+              <i class="fa fa-times"></i> Vehicle from Tangmarg–Gulmarg–Drung
+              Waterfall
+            </li>
+            <li><i class="fa fa-times"></i> Drung Waterfall (₹1,500–₹2,000)</li>
+            <li>
+              <i class="fa fa-times"></i> Any expenses due to natural
+              calamities, flight delays, strikes
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="fade-in">
+        <h2>Ready to Book Your Kashmir Trip?</h2>
+        <p>
+          Contact us today for a custom quote based on your group size, dates,
+          and preferred hotel tier.
+        </p>
+        <div class="cta-actions">
+          <a
+            href="https://wa.me/917006675853"
+            class="btn-whatsapp"
+            target="_blank"
+            ><i class="fab fa-whatsapp"></i> WhatsApp Us</a
+          >
+          <a href="tel:+917006675853" class="btn-call"
+            ><i class="fa fa-phone"></i> Call Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">The Vanity <span>Journeys</span></span>
+          <p>
+            Your trusted travel partner in Kashmir. We craft unforgettable
+            journeys through the most beautiful landscapes in the world — one
+            memory at a time.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com/thevanityjourneys" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/917006675853" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="mailto:vanityjourneys@gmail.com"
+              ><i class="fa fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Packages</h4>
+          <ul>
+            <li><a href="#option1">Kashmir 3N/4D</a></li>
+            <li><a href="#option2">Kashmir 4N/5D</a></li>
+            <li><a href="#option3">Kashmir 5N/6D</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa fa-map-marker-alt"></i
+            ><span>AR Complex Palpora, Near Danish Stadium, Srinagar</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-phone"></i
+            ><span>+91 70066 75853<br />+91 60054 66641</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-envelope"></i><span>vanityjourneys@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa fa-clock"></i><span>Mon – Sat, 8:00 AM – 8:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 The Vanity Journeys. All rights reserved.</span>
+        <div class="footer-approved"><span>✦ J&K Tourism Approved</span></div>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/917006675853" class="wa-float" target="_blank"
+      ><i class="fab fa-whatsapp"></i
+    ></a>
+
+    <!-- ═══════ MODALS ═══════ -->
+
+    <!-- Option 1 — 3 Star -->
+    <div class="modal-overlay" id="modal-opt1-3star">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Kashmir Explorer — 3 Star</h2>
+            <p>3 Nights / 4 Days · Srinagar · Sonamarg · Gulmarg</p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-opt1-3star')">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">1</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Arrival in Srinagar</h4>
+              <p>
+                On arrival at Srinagar airport, our representative will meet you
+                and take you for Srinagar local sightseeing covering Dal Lake,
+                Mughal Gardens, Cheshmashahi, and Hazratbal Shrine. After
+                sightseeing, check in to hotel. Dinner and night stay in
+                Srinagar.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">2</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Sonamarg → Srinagar</h4>
+              <p>
+                After breakfast, leave for Sonamarg (84 km) — "The Meadow of
+                Gold" at 2730m altitude. The Sindh River meanders through the
+                valley. Ponies can be hired for a trip to Thajiwas Glacier.
+                Return to Srinagar. Overnight at hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">3</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Gulmarg → Srinagar</h4>
+              <p>
+                After breakfast, proceed to Gulmarg (Meadow of Flowers).
+                Experience one of the best ski slopes in the world. The Gondola
+                Cable Car offers rides to Kongdori (14,000 ft) with views of
+                Himalayan peaks. Evening return to Srinagar. Dinner and
+                overnight at houseboat on Dal Lake.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">4</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Departure</h4>
+              <p>
+                Check out from hotel. Transfer to Srinagar Airport or Railway
+                Station for your onward journey. Farewell with beautiful
+                memories of Kashmir.
+              </p>
+            </div>
+          </div>
+          <div class="pricing-section">
+            <h3>Pricing — 3 Star Hotels</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Total Pax</th>
+                  <th>Vehicle</th>
+                  <th>Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02 Pax</td>
+                  <td>Etios</td>
+                  <td class="price-highlight">₹9,100</td>
+                </tr>
+                <tr>
+                  <td>04 Pax</td>
+                  <td>Ertiga</td>
+                  <td class="price-highlight">₹7,100</td>
+                </tr>
+                <tr>
+                  <td>06 Pax</td>
+                  <td>Innova</td>
+                  <td class="price-highlight">₹6,650</td>
+                </tr>
+                <tr>
+                  <td>08 Pax</td>
+                  <td>Winger</td>
+                  <td class="price-highlight">₹6,600</td>
+                </tr>
+                <tr>
+                  <td>10 Pax</td>
+                  <td>Tempo Traveller</td>
+                  <td class="price-highlight">₹6,500</td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+              style="
+                font-size: 0.8rem;
+                color: var(--text-light);
+                margin-top: 0.75rem;
+              "
+            >
+              Hotels: Hotel Arbiya Villa / Primeland / Twin Towers / Similar
+              &nbsp;|&nbsp; Houseboat: Merlin Group / Similar
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20-%203%20Star"
+            class="btn-book"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fab fa-whatsapp"></i> Book on WhatsApp</a
+          >
+          <a
+            href="tel:+917006675853"
+            class="btn-view"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fa fa-phone"></i> Call Us</a
+          >
         </div>
       </div>
     </div>
 
-    <div class="pkg-card fade-in" style="border: 2px solid var(--accent);">
-      <div class="pkg-card-img">
-        <img src="./assets/images/tour-dest5.jpeg" alt="3 Star Premium"/>
-        <div class="pkg-card-badge" style="background:var(--primary);color:var(--white);">Most Popular</div>
-        <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-      </div>
-      <div class="pkg-card-body">
-        <div class="pkg-card-tag">Option 3</div>
-        <div class="pkg-card-title">Grand Premium</div>
-        <div class="pkg-card-price">₹15,600<span>/per person</span></div>
-        <div class="pkg-card-duration"><i class="fa fa-moon"></i> 5 Nights / 6 Days &nbsp;·&nbsp; <i class="fa fa-users"></i> 2 Pax (Etios)</div>
-        <ul class="pkg-highlights">
-          <li><i class="fa fa-check-circle"></i> Srinagar local sightseeing + Mughal Gardens</li>
-          <li><i class="fa fa-check-circle"></i> Sonamarg full day excursion</li>
-          <li><i class="fa fa-check-circle"></i> Gulmarg — Gondola + meadows</li>
-          <li><i class="fa fa-check-circle"></i> Pahalgam overnight stay — Betaab Valley</li>
-          <li><i class="fa fa-check-circle"></i> Hotel Midtown Greens / Heritage Luxury</li>
-        </ul>
-        <div class="pkg-card-actions">
-          <button class="btn-view" onclick="openModal('modal-opt3-3star-prem')">View Details</button>
-          <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%203%20Star%20Premium" class="btn-book" target="_blank">Book Now</a>
+    <!-- Option 1 — 3 Star Premium (reuse same itinerary, diff pricing) -->
+    <div class="modal-overlay" id="modal-opt1-3star-prem">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Kashmir Premium — 3 Star Premium</h2>
+            <p>3 Nights / 4 Days · Srinagar · Sonamarg · Gulmarg</p>
+          </div>
+          <button
+            class="modal-close"
+            onclick="closeModal('modal-opt1-3star-prem')"
+          >
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">1</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Arrival in Srinagar</h4>
+              <p>
+                On arrival at Srinagar airport, our representative will meet you
+                and take you for Srinagar local sightseeing covering Dal Lake,
+                Mughal Gardens, Cheshmashahi, and Hazratbal Shrine. After
+                sightseeing, check in to hotel. Dinner and night stay in
+                Srinagar.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">2</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Sonamarg → Srinagar</h4>
+              <p>
+                After breakfast, leave for Sonamarg (84 km) — "The Meadow of
+                Gold". The Sindh River meanders through the valley abounding
+                with trout. Ponies can be hired for a trip to Thajiwas Glacier.
+                Return to Srinagar. Overnight at hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">3</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Gulmarg → Srinagar</h4>
+              <p>
+                After breakfast, proceed to Gulmarg. The Gondola Cable Car
+                offers rides to Kongdori at 14,000 ft. Evening return to
+                Srinagar. Dinner and overnight at houseboat on Dal Lake.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">4</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Departure</h4>
+              <p>
+                Check out and transfer to Srinagar Airport for your onward
+                journey.
+              </p>
+            </div>
+          </div>
+          <div class="pricing-section">
+            <h3>Pricing — 3 Star Premium Hotels</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Total Pax</th>
+                  <th>Vehicle</th>
+                  <th>Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02 Pax</td>
+                  <td>Etios</td>
+                  <td class="price-highlight">₹9,850</td>
+                </tr>
+                <tr>
+                  <td>04 Pax</td>
+                  <td>Ertiga</td>
+                  <td class="price-highlight">₹7,850</td>
+                </tr>
+                <tr>
+                  <td>06 Pax</td>
+                  <td>Innova</td>
+                  <td class="price-highlight">₹7,400</td>
+                </tr>
+                <tr>
+                  <td>08 Pax</td>
+                  <td>Winger</td>
+                  <td class="price-highlight">₹7,350</td>
+                </tr>
+                <tr>
+                  <td>10 Pax</td>
+                  <td>Tempo Traveller</td>
+                  <td class="price-highlight">₹7,250</td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+              style="
+                font-size: 0.8rem;
+                color: var(--text-light);
+                margin-top: 0.75rem;
+              "
+            >
+              Hotels: Hotel Midtown Greens / Heritage Luxury / Hotel Spring City
+              / Similar &nbsp;|&nbsp; Houseboat: Piano Group / Similar
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20-%203%20Star%20Premium"
+            class="btn-book"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fab fa-whatsapp"></i> Book on WhatsApp</a
+          >
+          <a
+            href="tel:+917006675853"
+            class="btn-view"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fa fa-phone"></i> Call Us</a
+          >
         </div>
       </div>
     </div>
 
-    <div class="pkg-card fade-in">
-      <div class="pkg-card-img">
-        <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=700&q=80" alt="4 Star"/>
-        <div class="pkg-card-badge" style="background:var(--primary-dark);color:var(--white);">4 Star</div>
-        <div class="pkg-card-star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-      </div>
-      <div class="pkg-card-body">
-        <div class="pkg-card-tag">Option 3</div>
-        <div class="pkg-card-title">Grand Luxury</div>
-        <div class="pkg-card-price">₹22,400<span>/per person</span></div>
-        <div class="pkg-card-duration"><i class="fa fa-moon"></i> 5 Nights / 6 Days &nbsp;·&nbsp; <i class="fa fa-users"></i> 2 Pax (Etios)</div>
-        <ul class="pkg-highlights">
-          <li><i class="fa fa-check-circle"></i> Srinagar local sightseeing + Mughal Gardens</li>
-          <li><i class="fa fa-check-circle"></i> Sonamarg full day excursion</li>
-          <li><i class="fa fa-check-circle"></i> Gulmarg — Gondola + meadows</li>
-          <li><i class="fa fa-check-circle"></i> Pahalgam overnight stay — Betaab Valley</li>
-          <li><i class="fa fa-check-circle"></i> Hotel Downtown / Grand Kaiser / Rose Petal</li>
-        </ul>
-        <div class="pkg-card-actions">
-          <button class="btn-view" onclick="openModal('modal-opt3-4star')">View Details</button>
-          <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%204%20Star%20Luxury" class="btn-book" target="_blank">Book Now</a>
+    <!-- Option 1 — 4 Star -->
+    <div class="modal-overlay" id="modal-opt1-4star">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Kashmir Luxury — 4 Star</h2>
+            <p>3 Nights / 4 Days · Srinagar · Sonamarg · Gulmarg</p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-opt1-4star')">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">1</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Arrival in Srinagar</h4>
+              <p>
+                On arrival at Srinagar airport, our representative will meet you
+                and take you for Srinagar local sightseeing covering Dal Lake,
+                Mughal Gardens, Cheshmashahi, and Hazratbal Shrine. Check in to
+                luxury hotel. Dinner and night stay.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">2</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Sonamarg → Srinagar</h4>
+              <p>
+                After breakfast, leave for Sonamarg (84 km). The Sindh River
+                meanders through the valley. Ponies can be hired for Thajiwas
+                Glacier. Return to Srinagar. Overnight at luxury hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">3</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Gulmarg → Srinagar</h4>
+              <p>
+                After breakfast, proceed to Gulmarg. Gondola Cable Car to 14,000
+                ft. Evening return to Srinagar. Dinner and overnight at premium
+                houseboat on Dal Lake.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">4</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Departure</h4>
+              <p>
+                Check out and transfer to Srinagar Airport for your onward
+                journey.
+              </p>
+            </div>
+          </div>
+          <div class="pricing-section">
+            <h3>Pricing — 4 Star Hotels</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Total Pax</th>
+                  <th>Vehicle</th>
+                  <th>Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02 Pax</td>
+                  <td>Etios</td>
+                  <td class="price-highlight">₹13,600</td>
+                </tr>
+                <tr>
+                  <td>04 Pax</td>
+                  <td>Ertiga</td>
+                  <td class="price-highlight">₹11,600</td>
+                </tr>
+                <tr>
+                  <td>06 Pax</td>
+                  <td>Innova</td>
+                  <td class="price-highlight">₹11,200</td>
+                </tr>
+                <tr>
+                  <td>08 Pax</td>
+                  <td>Winger</td>
+                  <td class="price-highlight">₹11,100</td>
+                </tr>
+                <tr>
+                  <td>10 Pax</td>
+                  <td>Tempo Traveller</td>
+                  <td class="price-highlight">₹11,000</td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+              style="
+                font-size: 0.8rem;
+                color: var(--text-light);
+                margin-top: 0.75rem;
+              "
+            >
+              Hotels: Hotel Downtown / Hotel Grand Kaiser / Hotel Rose Petal /
+              Similar &nbsp;|&nbsp; Houseboat: Young Alzira Group / Similar
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20-%204%20Star%20Luxury"
+            class="btn-book"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fab fa-whatsapp"></i> Book on WhatsApp</a
+          >
+          <a
+            href="tel:+917006675853"
+            class="btn-view"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fa fa-phone"></i> Call Us</a
+          >
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ─── INCLUDES / EXCLUDES ─── -->
-<section class="incl-section">
-  <div style="text-align:center;margin-bottom:2rem;">
-    <div class="section-tag">What's Covered</div>
-    <h2 class="section-title">Cost Includes & Excludes</h2>
-  </div>
-  <div class="incl-grid">
-    <div class="incl-box green fade-in">
-      <h3><i class="fa fa-check-circle"></i> Cost Includes</h3>
-      <ul class="incl-list">
-        <li><i class="fa fa-check"></i> Accommodation on double sharing basis</li>
-        <li><i class="fa fa-check"></i> Welcome drink on arrival</li>
-        <li><i class="fa fa-check"></i> Meal plan — Breakfast & Dinner (MAPAI)</li>
-        <li><i class="fa fa-check"></i> Pickup & drop at Srinagar Airport</li>
-        <li><i class="fa fa-check"></i> Meet and greet on arrival with placard</li>
-        <li><i class="fa fa-check"></i> All transfers, sightseeing & excursions by private cab</li>
-        <li><i class="fa fa-check"></i> Driver allowances, toll tax & state tax</li>
-        <li><i class="fa fa-check"></i> All applicable taxes</li>
-        <li><i class="fa fa-check"></i> Doctor on call 24/7</li>
-        <li><i class="fa fa-check"></i> All days private cab throughout the tour</li>
-      </ul>
-    </div>
-    <div class="incl-box red fade-in">
-      <h3><i class="fa fa-times-circle"></i> Cost Excludes</h3>
-      <ul class="incl-list">
-        <li><i class="fa fa-times"></i> Airfare / train fare, tips, drinks & lunch</li>
-        <li><i class="fa fa-times"></i> Laundry, telephone charges</li>
-        <li><i class="fa fa-times"></i> Horse riding & extra adventure activities</li>
-        <li><i class="fa fa-times"></i> Shikara ride on Dal Lake</li>
-        <li><i class="fa fa-times"></i> Gondola Cable Car charges (Phase I: ₹850/p.p, Phase II: ₹1,050/p.p)</li>
-        <li><i class="fa fa-times"></i> Sumo for sightseeing Aru, Betaab & Chandanwari in Pahalgam</li>
-        <li><i class="fa fa-times"></i> Entry fees — Mughal Gardens / Betaab Valley (₹50–100/p.p)</li>
-        <li><i class="fa fa-times"></i> Vehicle from Tangmarg–Gulmarg–Drung Waterfall</li>
-        <li><i class="fa fa-times"></i> Drung Waterfall (₹1,500–₹2,000)</li>
-        <li><i class="fa fa-times"></i> Any expenses due to natural calamities, flight delays, strikes</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section id="cta">
-  <div class="fade-in">
-    <h2>Ready to Book Your Kashmir Trip?</h2>
-    <p>Contact us today for a custom quote based on your group size, dates, and preferred hotel tier.</p>
-    <div class="cta-actions">
-      <a href="https://wa.me/917006675853" class="btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
-      <a href="tel:+917006675853" class="btn-call"><i class="fa fa-phone"></i> Call Now</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <span class="logo">The Vanity <span>Journeys</span></span>
-      <p>Your trusted travel partner in Kashmir. We craft unforgettable journeys through the most beautiful landscapes in the world — one memory at a time.</p>
-      <div class="footer-socials">
-        <a href="https://instagram.com/thevanityjourneys" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/917006675853" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="mailto:vanityjourneys@gmail.com"><i class="fa fa-envelope"></i></a>
+    <!-- Option 2 modals (abbreviated for space, same pattern) -->
+    <div class="modal-overlay" id="modal-opt2-3star">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Valley Explorer — 3 Star</h2>
+            <p>4 Nights / 5 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam</p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-opt2-3star')">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">1</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Arrival in Srinagar</h4>
+              <p>
+                Arrive at Srinagar International Airport. 35-minute drive
+                through the heart of New Srinagar, passing the Abdullah Bridge
+                on the Jhelum River. Proceed for an hour Shikara ride on Dal
+                Lake. Overnight stay in hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">2</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Sonamarg → Srinagar</h4>
+              <p>
+                Full day excursion to Sonamarg (84 km, 3 hrs) — "Meadow of
+                Gold". A gushing river flowing down from snowy heights with
+                dense woodlands. Adventure options: treks, sledging, angling,
+                alpine skiing and white water rafting. Enjoy pony ride or
+                leisurely walks. Return to Srinagar. Dinner and overnight.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">3</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Gulmarg → Srinagar</h4>
+              <p>
+                Full day at Gulmarg (56 km, 2 hrs) at 2730m altitude. Leisurely
+                walks on lush green meadows with snow-capped mountain backdrop.
+                Enjoy pony ride or gondola ride (at own cost). Return to
+                Srinagar. Dinner and overnight.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">4</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Pahalgam → Srinagar</h4>
+              <p>
+                Drive to Pahalgam. Visit Betaab Valley and Chandanwari. Horse
+                riding trip to Baisaran meadows (at own cost). After
+                sightseeing, drive back to Srinagar. Transfer to houseboat for
+                overnight stay on Dal Lake.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">5</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Departure</h4>
+              <p>
+                After breakfast, check out and transfer to airport with memories
+                of Kashmir.
+              </p>
+            </div>
+          </div>
+          <div class="pricing-section">
+            <h3>Pricing — 3 Star Hotels</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Total Pax</th>
+                  <th>Vehicle</th>
+                  <th>Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02 Pax</td>
+                  <td>Etios</td>
+                  <td class="price-highlight">₹11,600</td>
+                </tr>
+                <tr>
+                  <td>04 Pax</td>
+                  <td>Ertiga</td>
+                  <td class="price-highlight">₹9,100</td>
+                </tr>
+                <tr>
+                  <td>06 Pax</td>
+                  <td>Innova</td>
+                  <td class="price-highlight">₹8,600</td>
+                </tr>
+                <tr>
+                  <td>08 Pax</td>
+                  <td>Winger</td>
+                  <td class="price-highlight">₹8,500</td>
+                </tr>
+                <tr>
+                  <td>10 Pax</td>
+                  <td>Tempo Traveller</td>
+                  <td class="price-highlight">₹8,400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%203%20Star"
+            class="btn-book"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fab fa-whatsapp"></i> Book on WhatsApp</a
+          ><a
+            href="tel:+917006675853"
+            class="btn-view"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fa fa-phone"></i> Call Us</a
+          >
+        </div>
       </div>
     </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About Us</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="index.html#faq">FAQs</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Packages</h4>
-      <ul>
-        <li><a href="#option1">Kashmir 3N/4D</a></li>
-        <li><a href="#option2">Kashmir 4N/5D</a></li>
-        <li><a href="#option3">Kashmir 5N/6D</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <div class="footer-contact-item"><i class="fa fa-map-marker-alt"></i><span>AR Complex Palpora, Near Danish Stadium, Srinagar</span></div>
-      <div class="footer-contact-item"><i class="fa fa-phone"></i><span>+91 70066 75853<br/>+91 60054 66641</span></div>
-      <div class="footer-contact-item"><i class="fa fa-envelope"></i><span>vanityjourneys@gmail.com</span></div>
-      <div class="footer-contact-item"><i class="fa fa-clock"></i><span>Mon – Sat, 8:00 AM – 8:00 PM</span></div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2025 The Vanity Journeys. All rights reserved.</span>
-    <div class="footer-approved"><span>✦ J&K Tourism Approved</span></div>
-  </div>
-</footer>
 
-<a href="https://wa.me/917006675853" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
-
-<!-- ═══════ MODALS ═══════ -->
-
-<!-- Option 1 — 3 Star -->
-<div class="modal-overlay" id="modal-opt1-3star">
-  <div class="modal">
-    <div class="modal-header">
-      <div><h2>Kashmir Explorer — 3 Star</h2><p>3 Nights / 4 Days · Srinagar · Sonamarg · Gulmarg</p></div>
-      <button class="modal-close" onclick="closeModal('modal-opt1-3star')"><i class="fa fa-times"></i></button>
-    </div>
-    <div class="modal-body">
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">1</span></div><div class="itin-day-content"><h4>Arrival in Srinagar</h4><p>On arrival at Srinagar airport, our representative will meet you and take you for Srinagar local sightseeing covering Dal Lake, Mughal Gardens, Cheshmashahi, and Hazratbal Shrine. After sightseeing, check in to hotel. Dinner and night stay in Srinagar.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">2</span></div><div class="itin-day-content"><h4>Srinagar → Sonamarg → Srinagar</h4><p>After breakfast, leave for Sonamarg (84 km) — "The Meadow of Gold" at 2730m altitude. The Sindh River meanders through the valley. Ponies can be hired for a trip to Thajiwas Glacier. Return to Srinagar. Overnight at hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">3</span></div><div class="itin-day-content"><h4>Srinagar → Gulmarg → Srinagar</h4><p>After breakfast, proceed to Gulmarg (Meadow of Flowers). Experience one of the best ski slopes in the world. The Gondola Cable Car offers rides to Kongdori (14,000 ft) with views of Himalayan peaks. Evening return to Srinagar. Dinner and overnight at houseboat on Dal Lake.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Departure</h4><p>Check out from hotel. Transfer to Srinagar Airport or Railway Station for your onward journey. Farewell with beautiful memories of Kashmir.</p></div></div>
-      <div class="pricing-section">
-        <h3>Pricing — 3 Star Hotels</h3>
-        <table class="pricing-table">
-          <thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead>
-          <tbody>
-            <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹9,100</td></tr>
-            <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹7,100</td></tr>
-            <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹6,650</td></tr>
-            <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹6,600</td></tr>
-            <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹6,500</td></tr>
-          </tbody>
-        </table>
-        <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Arbiya Villa / Primeland / Twin Towers / Similar &nbsp;|&nbsp; Houseboat: Merlin Group / Similar</p>
+    <div class="modal-overlay" id="modal-opt2-3star-prem">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Valley Premium — 3 Star Premium</h2>
+            <p>4 Nights / 5 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam</p>
+          </div>
+          <button
+            class="modal-close"
+            onclick="closeModal('modal-opt2-3star-prem')"
+          >
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">1</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Arrival in Srinagar</h4>
+              <p>
+                Arrive at Srinagar International Airport. 35-minute drive
+                through Srinagar city. Shikara ride on Dal Lake. Overnight stay
+                in premium hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">2</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Sonamarg → Srinagar</h4>
+              <p>
+                Full day to Sonamarg (84 km). Glacier walks, pony rides, and
+                river scenery. Return to Srinagar. Dinner and overnight in
+                premium hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">3</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Gulmarg → Srinagar</h4>
+              <p>
+                Full day at Gulmarg. Gondola ride option. Meadows of flowers
+                with Himalayan backdrop. Return to Srinagar. Dinner and
+                overnight.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">4</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Pahalgam → Srinagar</h4>
+              <p>
+                Pahalgam — Betaab Valley, Chandanwari, Baisaran meadows. Return
+                to Srinagar. Overnight on premium houseboat.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">5</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Departure</h4>
+              <p>After breakfast, check out and transfer to airport.</p>
+            </div>
+          </div>
+          <div class="pricing-section">
+            <h3>Pricing — 3 Star Premium Hotels</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Total Pax</th>
+                  <th>Vehicle</th>
+                  <th>Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02 Pax</td>
+                  <td>Etios</td>
+                  <td class="price-highlight">₹12,600</td>
+                </tr>
+                <tr>
+                  <td>04 Pax</td>
+                  <td>Ertiga</td>
+                  <td class="price-highlight">₹10,100</td>
+                </tr>
+                <tr>
+                  <td>06 Pax</td>
+                  <td>Innova</td>
+                  <td class="price-highlight">₹9,600</td>
+                </tr>
+                <tr>
+                  <td>08 Pax</td>
+                  <td>Winger</td>
+                  <td class="price-highlight">₹9,500</td>
+                </tr>
+                <tr>
+                  <td>10 Pax</td>
+                  <td>Tempo Traveller</td>
+                  <td class="price-highlight">₹9,400</td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+              style="
+                font-size: 0.8rem;
+                color: var(--text-light);
+                margin-top: 0.75rem;
+              "
+            >
+              Hotels: Hotel Midtown Greens / Heritage Luxury / Spring City /
+              Similar &nbsp;|&nbsp; Houseboat: Piano Group / Similar
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%203%20Star%20Premium"
+            class="btn-book"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fab fa-whatsapp"></i> Book on WhatsApp</a
+          ><a
+            href="tel:+917006675853"
+            class="btn-view"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fa fa-phone"></i> Call Us</a
+          >
+        </div>
       </div>
     </div>
-    <div class="modal-footer">
-      <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20-%203%20Star" class="btn-book" target="_blank" style="display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a>
-      <a href="tel:+917006675853" class="btn-view" style="display:inline-flex;align-items:center;gap:8px;"><i class="fa fa-phone"></i> Call Us</a>
-    </div>
-  </div>
-</div>
 
-<!-- Option 1 — 3 Star Premium (reuse same itinerary, diff pricing) -->
-<div class="modal-overlay" id="modal-opt1-3star-prem">
-  <div class="modal">
-    <div class="modal-header">
-      <div><h2>Kashmir Premium — 3 Star Premium</h2><p>3 Nights / 4 Days · Srinagar · Sonamarg · Gulmarg</p></div>
-      <button class="modal-close" onclick="closeModal('modal-opt1-3star-prem')"><i class="fa fa-times"></i></button>
-    </div>
-    <div class="modal-body">
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">1</span></div><div class="itin-day-content"><h4>Arrival in Srinagar</h4><p>On arrival at Srinagar airport, our representative will meet you and take you for Srinagar local sightseeing covering Dal Lake, Mughal Gardens, Cheshmashahi, and Hazratbal Shrine. After sightseeing, check in to hotel. Dinner and night stay in Srinagar.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">2</span></div><div class="itin-day-content"><h4>Srinagar → Sonamarg → Srinagar</h4><p>After breakfast, leave for Sonamarg (84 km) — "The Meadow of Gold". The Sindh River meanders through the valley abounding with trout. Ponies can be hired for a trip to Thajiwas Glacier. Return to Srinagar. Overnight at hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">3</span></div><div class="itin-day-content"><h4>Srinagar → Gulmarg → Srinagar</h4><p>After breakfast, proceed to Gulmarg. The Gondola Cable Car offers rides to Kongdori at 14,000 ft. Evening return to Srinagar. Dinner and overnight at houseboat on Dal Lake.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Departure</h4><p>Check out and transfer to Srinagar Airport for your onward journey.</p></div></div>
-      <div class="pricing-section">
-        <h3>Pricing — 3 Star Premium Hotels</h3>
-        <table class="pricing-table">
-          <thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead>
-          <tbody>
-            <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹9,850</td></tr>
-            <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹7,850</td></tr>
-            <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹7,400</td></tr>
-            <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹7,350</td></tr>
-            <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹7,250</td></tr>
-          </tbody>
-        </table>
-        <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Midtown Greens / Heritage Luxury / Hotel Spring City / Similar &nbsp;|&nbsp; Houseboat: Piano Group / Similar</p>
+    <div class="modal-overlay" id="modal-opt2-4star">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Valley Luxury — 4 Star</h2>
+            <p>4 Nights / 5 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam</p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-opt2-4star')">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">1</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Arrival in Srinagar</h4>
+              <p>
+                Arrive at Srinagar International Airport. Shikara ride on Dal
+                Lake. Overnight in luxury 4-star hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">2</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Sonamarg → Srinagar</h4>
+              <p>
+                Full day Sonamarg excursion. Glacier treks, pony rides, river
+                walks. Return to Srinagar. Overnight in luxury hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">3</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Gulmarg → Srinagar</h4>
+              <p>
+                Full day Gulmarg. Gondola cable car to 14,000 ft. Himalayan
+                views. Return to Srinagar. Overnight.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">4</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Pahalgam → Srinagar</h4>
+              <p>
+                Pahalgam — Betaab Valley, Chandanwari. Return to Srinagar.
+                Overnight on luxury houseboat.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">5</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Departure</h4>
+              <p>After breakfast, check out and transfer to airport.</p>
+            </div>
+          </div>
+          <div class="pricing-section">
+            <h3>Pricing — 4 Star Hotels</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Total Pax</th>
+                  <th>Vehicle</th>
+                  <th>Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02 Pax</td>
+                  <td>Etios</td>
+                  <td class="price-highlight">₹17,600</td>
+                </tr>
+                <tr>
+                  <td>04 Pax</td>
+                  <td>Ertiga</td>
+                  <td class="price-highlight">₹15,100</td>
+                </tr>
+                <tr>
+                  <td>06 Pax</td>
+                  <td>Innova</td>
+                  <td class="price-highlight">₹14,600</td>
+                </tr>
+                <tr>
+                  <td>08 Pax</td>
+                  <td>Winger</td>
+                  <td class="price-highlight">₹14,500</td>
+                </tr>
+                <tr>
+                  <td>10 Pax</td>
+                  <td>Tempo Traveller</td>
+                  <td class="price-highlight">₹14,400</td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+              style="
+                font-size: 0.8rem;
+                color: var(--text-light);
+                margin-top: 0.75rem;
+              "
+            >
+              Hotels: Hotel Downtown / Grand Kaiser / Rose Petal / Similar
+              &nbsp;|&nbsp; Houseboat: Young Alzira / Similar
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%204%20Star"
+            class="btn-book"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fab fa-whatsapp"></i> Book on WhatsApp</a
+          ><a
+            href="tel:+917006675853"
+            class="btn-view"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fa fa-phone"></i> Call Us</a
+          >
+        </div>
       </div>
     </div>
-    <div class="modal-footer">
-      <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20-%203%20Star%20Premium" class="btn-book" target="_blank" style="display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a>
-      <a href="tel:+917006675853" class="btn-view" style="display:inline-flex;align-items:center;gap:8px;"><i class="fa fa-phone"></i> Call Us</a>
-    </div>
-  </div>
-</div>
 
-<!-- Option 1 — 4 Star -->
-<div class="modal-overlay" id="modal-opt1-4star">
-  <div class="modal">
-    <div class="modal-header">
-      <div><h2>Kashmir Luxury — 4 Star</h2><p>3 Nights / 4 Days · Srinagar · Sonamarg · Gulmarg</p></div>
-      <button class="modal-close" onclick="closeModal('modal-opt1-4star')"><i class="fa fa-times"></i></button>
-    </div>
-    <div class="modal-body">
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">1</span></div><div class="itin-day-content"><h4>Arrival in Srinagar</h4><p>On arrival at Srinagar airport, our representative will meet you and take you for Srinagar local sightseeing covering Dal Lake, Mughal Gardens, Cheshmashahi, and Hazratbal Shrine. Check in to luxury hotel. Dinner and night stay.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">2</span></div><div class="itin-day-content"><h4>Srinagar → Sonamarg → Srinagar</h4><p>After breakfast, leave for Sonamarg (84 km). The Sindh River meanders through the valley. Ponies can be hired for Thajiwas Glacier. Return to Srinagar. Overnight at luxury hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">3</span></div><div class="itin-day-content"><h4>Srinagar → Gulmarg → Srinagar</h4><p>After breakfast, proceed to Gulmarg. Gondola Cable Car to 14,000 ft. Evening return to Srinagar. Dinner and overnight at premium houseboat on Dal Lake.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Departure</h4><p>Check out and transfer to Srinagar Airport for your onward journey.</p></div></div>
-      <div class="pricing-section">
-        <h3>Pricing — 4 Star Hotels</h3>
-        <table class="pricing-table">
-          <thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead>
-          <tbody>
-            <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹13,600</td></tr>
-            <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹11,600</td></tr>
-            <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹11,200</td></tr>
-            <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹11,100</td></tr>
-            <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹11,000</td></tr>
-          </tbody>
-        </table>
-        <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Downtown / Hotel Grand Kaiser / Hotel Rose Petal / Similar &nbsp;|&nbsp; Houseboat: Young Alzira Group / Similar</p>
+    <!-- Option 3 modals -->
+    <div class="modal-overlay" id="modal-opt3-3star">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Grand Explorer — 3 Star</h2>
+            <p>
+              5 Nights / 6 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam
+              (Overnight)
+            </p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-opt3-3star')">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">1</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Arrival in Srinagar</h4>
+              <p>
+                Arrive at Srinagar Airport. Shikara ride on Dal Lake. Local
+                sightseeing: Nishat & Shalimar Mughal Gardens. Overnight stay in
+                hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">2</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Sonamarg → Srinagar</h4>
+              <p>
+                Full day excursion to Sonamarg (84 km). Forest cover of
+                sycamore, alpine flowers, silver birch, fir and pine. Treks,
+                sledging, angling, alpine skiing. Pony ride at own cost. Return
+                to Srinagar. Dinner and overnight.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">3</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Gulmarg → Srinagar</h4>
+              <p>
+                Full day Gulmarg (56 km) at 2730m. Gondola ride (rope way) to
+                Khillanmarg at own cost. Leisurely walks on meadows of flowers
+                with snow-capped mountain backdrop. Return to Srinagar. Dinner &
+                overnight.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">4</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Pahalgam</h4>
+              <p>
+                Drive to Pahalgam. Visit Betaab Valley and Chandanwari. Horse
+                riding to Baisaran meadows (at own cost). Dinner & overnight
+                stay in Pahalgam hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">5</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Pahalgam → Srinagar</h4>
+              <p>
+                After breakfast, leave Pahalgam and drive to Srinagar. Check in
+                to hotel. Afternoon free for shopping. Overnight in Houseboat on
+                Dal Lake.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">6</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Departure</h4>
+              <p>
+                After breakfast, check out and transfer to airport with
+                beautiful memories of Kashmir.
+              </p>
+            </div>
+          </div>
+          <div class="pricing-section">
+            <h3>Pricing — 3 Star Hotels</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Total Pax</th>
+                  <th>Vehicle</th>
+                  <th>Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02 Pax</td>
+                  <td>Etios</td>
+                  <td class="price-highlight">₹14,400</td>
+                </tr>
+                <tr>
+                  <td>04 Pax</td>
+                  <td>Ertiga</td>
+                  <td class="price-highlight">₹11,400</td>
+                </tr>
+                <tr>
+                  <td>06 Pax</td>
+                  <td>Innova</td>
+                  <td class="price-highlight">₹10,700</td>
+                </tr>
+                <tr>
+                  <td>08 Pax</td>
+                  <td>Winger</td>
+                  <td class="price-highlight">₹10,600</td>
+                </tr>
+                <tr>
+                  <td>10 Pax</td>
+                  <td>Tempo Traveller</td>
+                  <td class="price-highlight">₹10,500</td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+              style="
+                font-size: 0.8rem;
+                color: var(--text-light);
+                margin-top: 0.75rem;
+              "
+            >
+              Srinagar: Arbiya Villa / Primeland / Twin Towers &nbsp;|&nbsp;
+              Pahalgam: Hotel Fifth Season / Serenity Pines
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%203%20Star"
+            class="btn-book"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fab fa-whatsapp"></i> Book on WhatsApp</a
+          ><a
+            href="tel:+917006675853"
+            class="btn-view"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fa fa-phone"></i> Call Us</a
+          >
+        </div>
       </div>
     </div>
-    <div class="modal-footer">
-      <a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%201%20-%204%20Star%20Luxury" class="btn-book" target="_blank" style="display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a>
-      <a href="tel:+917006675853" class="btn-view" style="display:inline-flex;align-items:center;gap:8px;"><i class="fa fa-phone"></i> Call Us</a>
-    </div>
-  </div>
-</div>
 
-<!-- Option 2 modals (abbreviated for space, same pattern) -->
-<div class="modal-overlay" id="modal-opt2-3star">
-  <div class="modal">
-    <div class="modal-header"><div><h2>Valley Explorer — 3 Star</h2><p>4 Nights / 5 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam</p></div><button class="modal-close" onclick="closeModal('modal-opt2-3star')"><i class="fa fa-times"></i></button></div>
-    <div class="modal-body">
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">1</span></div><div class="itin-day-content"><h4>Arrival in Srinagar</h4><p>Arrive at Srinagar International Airport. 35-minute drive through the heart of New Srinagar, passing the Abdullah Bridge on the Jhelum River. Proceed for an hour Shikara ride on Dal Lake. Overnight stay in hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">2</span></div><div class="itin-day-content"><h4>Srinagar → Sonamarg → Srinagar</h4><p>Full day excursion to Sonamarg (84 km, 3 hrs) — "Meadow of Gold". A gushing river flowing down from snowy heights with dense woodlands. Adventure options: treks, sledging, angling, alpine skiing and white water rafting. Enjoy pony ride or leisurely walks. Return to Srinagar. Dinner and overnight.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">3</span></div><div class="itin-day-content"><h4>Srinagar → Gulmarg → Srinagar</h4><p>Full day at Gulmarg (56 km, 2 hrs) at 2730m altitude. Leisurely walks on lush green meadows with snow-capped mountain backdrop. Enjoy pony ride or gondola ride (at own cost). Return to Srinagar. Dinner and overnight.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Srinagar → Pahalgam → Srinagar</h4><p>Drive to Pahalgam. Visit Betaab Valley and Chandanwari. Horse riding trip to Baisaran meadows (at own cost). After sightseeing, drive back to Srinagar. Transfer to houseboat for overnight stay on Dal Lake.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport with memories of Kashmir.</p></div></div>
-      <div class="pricing-section"><h3>Pricing — 3 Star Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹11,600</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹9,100</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹8,600</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹8,500</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹8,400</td></tr>
-        </tbody></table>
+    <div class="modal-overlay" id="modal-opt3-3star-prem">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Grand Premium — 3 Star Premium</h2>
+            <p>
+              5 Nights / 6 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam
+              (Overnight)
+            </p>
+          </div>
+          <button
+            class="modal-close"
+            onclick="closeModal('modal-opt3-3star-prem')"
+          >
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">1</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Arrival in Srinagar</h4>
+              <p>
+                Arrive at Srinagar Airport. Shikara ride on Dal Lake. Mughal
+                Gardens sightseeing. Overnight in premium hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">2</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Sonamarg → Srinagar</h4>
+              <p>
+                Full day Sonamarg. Glacier treks, pony rides. Return to
+                Srinagar. Overnight in premium hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">3</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Gulmarg → Srinagar</h4>
+              <p>
+                Full day Gulmarg. Gondola ride option at own cost. Return to
+                Srinagar. Overnight in premium hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">4</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Pahalgam</h4>
+              <p>
+                Drive to Pahalgam. Betaab Valley, Chandanwari, Baisaran meadows.
+                Overnight in premium Pahalgam hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">5</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Pahalgam → Srinagar</h4>
+              <p>
+                Drive to Srinagar. Afternoon shopping. Overnight on premium
+                houseboat.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">6</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Departure</h4>
+              <p>Check out and transfer to airport.</p>
+            </div>
+          </div>
+          <div class="pricing-section">
+            <h3>Pricing — 3 Star Premium Hotels</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Total Pax</th>
+                  <th>Vehicle</th>
+                  <th>Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02 Pax</td>
+                  <td>Etios</td>
+                  <td class="price-highlight">₹15,600</td>
+                </tr>
+                <tr>
+                  <td>04 Pax</td>
+                  <td>Ertiga</td>
+                  <td class="price-highlight">₹12,600</td>
+                </tr>
+                <tr>
+                  <td>06 Pax</td>
+                  <td>Innova</td>
+                  <td class="price-highlight">₹11,900</td>
+                </tr>
+                <tr>
+                  <td>08 Pax</td>
+                  <td>Winger</td>
+                  <td class="price-highlight">₹11,850</td>
+                </tr>
+                <tr>
+                  <td>10 Pax</td>
+                  <td>Tempo Traveller</td>
+                  <td class="price-highlight">₹11,700</td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+              style="
+                font-size: 0.8rem;
+                color: var(--text-light);
+                margin-top: 0.75rem;
+              "
+            >
+              Srinagar: Midtown Greens / Heritage Luxury &nbsp;|&nbsp; Pahalgam:
+              Hotel Lavish Residency / White Castle &nbsp;|&nbsp; Houseboat:
+              Piano Group
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%203%20Star%20Premium"
+            class="btn-book"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fab fa-whatsapp"></i> Book on WhatsApp</a
+          ><a
+            href="tel:+917006675853"
+            class="btn-view"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fa fa-phone"></i> Call Us</a
+          >
+        </div>
       </div>
     </div>
-    <div class="modal-footer"><a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%203%20Star" class="btn-book" target="_blank" style="display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a><a href="tel:+917006675853" class="btn-view" style="display:inline-flex;align-items:center;gap:8px;"><i class="fa fa-phone"></i> Call Us</a></div>
-  </div>
-</div>
 
-<div class="modal-overlay" id="modal-opt2-3star-prem">
-  <div class="modal">
-    <div class="modal-header"><div><h2>Valley Premium — 3 Star Premium</h2><p>4 Nights / 5 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam</p></div><button class="modal-close" onclick="closeModal('modal-opt2-3star-prem')"><i class="fa fa-times"></i></button></div>
-    <div class="modal-body">
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">1</span></div><div class="itin-day-content"><h4>Arrival in Srinagar</h4><p>Arrive at Srinagar International Airport. 35-minute drive through Srinagar city. Shikara ride on Dal Lake. Overnight stay in premium hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">2</span></div><div class="itin-day-content"><h4>Srinagar → Sonamarg → Srinagar</h4><p>Full day to Sonamarg (84 km). Glacier walks, pony rides, and river scenery. Return to Srinagar. Dinner and overnight in premium hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">3</span></div><div class="itin-day-content"><h4>Srinagar → Gulmarg → Srinagar</h4><p>Full day at Gulmarg. Gondola ride option. Meadows of flowers with Himalayan backdrop. Return to Srinagar. Dinner and overnight.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Srinagar → Pahalgam → Srinagar</h4><p>Pahalgam — Betaab Valley, Chandanwari, Baisaran meadows. Return to Srinagar. Overnight on premium houseboat.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport.</p></div></div>
-      <div class="pricing-section"><h3>Pricing — 3 Star Premium Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹12,600</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹10,100</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹9,600</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹9,500</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹9,400</td></tr>
-        </tbody></table>
-        <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Midtown Greens / Heritage Luxury / Spring City / Similar &nbsp;|&nbsp; Houseboat: Piano Group / Similar</p>
+    <div class="modal-overlay" id="modal-opt3-4star">
+      <div class="modal">
+        <div class="modal-header">
+          <div>
+            <h2>Grand Luxury — 4 Star</h2>
+            <p>
+              5 Nights / 6 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam
+              (Overnight)
+            </p>
+          </div>
+          <button class="modal-close" onclick="closeModal('modal-opt3-4star')">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">1</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Arrival in Srinagar</h4>
+              <p>
+                Arrive at Srinagar Airport. Shikara ride. Mughal Gardens.
+                Overnight in luxury 4-star hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">2</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Sonamarg → Srinagar</h4>
+              <p>
+                Full day Sonamarg excursion. Glacier walks, adventure
+                activities. Return to Srinagar. Overnight in luxury hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">3</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Gulmarg → Srinagar</h4>
+              <p>
+                Full day Gulmarg. Gondola to 14,000 ft. Himalayan panorama.
+                Return to Srinagar. Overnight in luxury hotel.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">4</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Srinagar → Pahalgam</h4>
+              <p>
+                Drive to Pahalgam. Betaab Valley, Chandanwari, Baisaran meadows.
+                Overnight in luxury Pahalgam resort.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">5</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Pahalgam → Srinagar</h4>
+              <p>
+                Drive to Srinagar. Afternoon free for shopping. Overnight on
+                luxury houseboat on Dal Lake.
+              </p>
+            </div>
+          </div>
+          <div class="itin-day">
+            <div class="itin-day-num">
+              <span class="day-word">Day</span><span class="day-n">6</span>
+            </div>
+            <div class="itin-day-content">
+              <h4>Departure</h4>
+              <p>
+                After breakfast, check out and transfer to airport with
+                beautiful memories of Kashmir.
+              </p>
+            </div>
+          </div>
+          <div class="pricing-section">
+            <h3>Pricing — 4 Star Hotels</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Total Pax</th>
+                  <th>Vehicle</th>
+                  <th>Price (per person)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>02 Pax</td>
+                  <td>Etios</td>
+                  <td class="price-highlight">₹22,400</td>
+                </tr>
+                <tr>
+                  <td>04 Pax</td>
+                  <td>Ertiga</td>
+                  <td class="price-highlight">₹19,400</td>
+                </tr>
+                <tr>
+                  <td>06 Pax</td>
+                  <td>Innova</td>
+                  <td class="price-highlight">₹18,700</td>
+                </tr>
+                <tr>
+                  <td>08 Pax</td>
+                  <td>Winger</td>
+                  <td class="price-highlight">₹18,600</td>
+                </tr>
+                <tr>
+                  <td>10 Pax</td>
+                  <td>Tempo Traveller</td>
+                  <td class="price-highlight">₹18,500</td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+              style="
+                font-size: 0.8rem;
+                color: var(--text-light);
+                margin-top: 0.75rem;
+              "
+            >
+              Srinagar: Hotel Downtown / Grand Kaiser / Rose Petal &nbsp;|&nbsp;
+              Pahalgam: Chinar Resorts & Spa / Faiz Resorts &nbsp;|&nbsp;
+              Houseboat: Young Alzira / Similar
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%204%20Star%20Luxury"
+            class="btn-book"
+            target="_blank"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fab fa-whatsapp"></i> Book on WhatsApp</a
+          ><a
+            href="tel:+917006675853"
+            class="btn-view"
+            style="display: inline-flex; align-items: center; gap: 8px"
+            ><i class="fa fa-phone"></i> Call Us</a
+          >
+        </div>
       </div>
     </div>
-    <div class="modal-footer"><a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%203%20Star%20Premium" class="btn-book" target="_blank" style="display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a><a href="tel:+917006675853" class="btn-view" style="display:inline-flex;align-items:center;gap:8px;"><i class="fa fa-phone"></i> Call Us</a></div>
-  </div>
-</div>
 
-<div class="modal-overlay" id="modal-opt2-4star">
-  <div class="modal">
-    <div class="modal-header"><div><h2>Valley Luxury — 4 Star</h2><p>4 Nights / 5 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam</p></div><button class="modal-close" onclick="closeModal('modal-opt2-4star')"><i class="fa fa-times"></i></button></div>
-    <div class="modal-body">
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">1</span></div><div class="itin-day-content"><h4>Arrival in Srinagar</h4><p>Arrive at Srinagar International Airport. Shikara ride on Dal Lake. Overnight in luxury 4-star hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">2</span></div><div class="itin-day-content"><h4>Srinagar → Sonamarg → Srinagar</h4><p>Full day Sonamarg excursion. Glacier treks, pony rides, river walks. Return to Srinagar. Overnight in luxury hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">3</span></div><div class="itin-day-content"><h4>Srinagar → Gulmarg → Srinagar</h4><p>Full day Gulmarg. Gondola cable car to 14,000 ft. Himalayan views. Return to Srinagar. Overnight.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Srinagar → Pahalgam → Srinagar</h4><p>Pahalgam — Betaab Valley, Chandanwari. Return to Srinagar. Overnight on luxury houseboat.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport.</p></div></div>
-      <div class="pricing-section"><h3>Pricing — 4 Star Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹17,600</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹15,100</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹14,600</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹14,500</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹14,400</td></tr>
-        </tbody></table>
-        <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Hotels: Hotel Downtown / Grand Kaiser / Rose Petal / Similar &nbsp;|&nbsp; Houseboat: Young Alzira / Similar</p>
-      </div>
-    </div>
-    <div class="modal-footer"><a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%202%20(4N%2F5D)%20-%204%20Star" class="btn-book" target="_blank" style="display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a><a href="tel:+917006675853" class="btn-view" style="display:inline-flex;align-items:center;gap:8px;"><i class="fa fa-phone"></i> Call Us</a></div>
-  </div>
-</div>
+    <script defer>
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 40);
+      });
 
-<!-- Option 3 modals -->
-<div class="modal-overlay" id="modal-opt3-3star">
-  <div class="modal">
-    <div class="modal-header"><div><h2>Grand Explorer — 3 Star</h2><p>5 Nights / 6 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam (Overnight)</p></div><button class="modal-close" onclick="closeModal('modal-opt3-3star')"><i class="fa fa-times"></i></button></div>
-    <div class="modal-body">
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">1</span></div><div class="itin-day-content"><h4>Arrival in Srinagar</h4><p>Arrive at Srinagar Airport. Shikara ride on Dal Lake. Local sightseeing: Nishat & Shalimar Mughal Gardens. Overnight stay in hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">2</span></div><div class="itin-day-content"><h4>Srinagar → Sonamarg → Srinagar</h4><p>Full day excursion to Sonamarg (84 km). Forest cover of sycamore, alpine flowers, silver birch, fir and pine. Treks, sledging, angling, alpine skiing. Pony ride at own cost. Return to Srinagar. Dinner and overnight.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">3</span></div><div class="itin-day-content"><h4>Srinagar → Gulmarg → Srinagar</h4><p>Full day Gulmarg (56 km) at 2730m. Gondola ride (rope way) to Khillanmarg at own cost. Leisurely walks on meadows of flowers with snow-capped mountain backdrop. Return to Srinagar. Dinner & overnight.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Srinagar → Pahalgam</h4><p>Drive to Pahalgam. Visit Betaab Valley and Chandanwari. Horse riding to Baisaran meadows (at own cost). Dinner & overnight stay in Pahalgam hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Pahalgam → Srinagar</h4><p>After breakfast, leave Pahalgam and drive to Srinagar. Check in to hotel. Afternoon free for shopping. Overnight in Houseboat on Dal Lake.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">6</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport with beautiful memories of Kashmir.</p></div></div>
-      <div class="pricing-section"><h3>Pricing — 3 Star Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹14,400</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹11,400</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹10,700</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹10,600</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹10,500</td></tr>
-        </tbody></table>
-        <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Srinagar: Arbiya Villa / Primeland / Twin Towers &nbsp;|&nbsp; Pahalgam: Hotel Fifth Season / Serenity Pines</p>
-      </div>
-    </div>
-    <div class="modal-footer"><a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%203%20Star" class="btn-book" target="_blank" style="display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a><a href="tel:+917006675853" class="btn-view" style="display:inline-flex;align-items:center;gap:8px;"><i class="fa fa-phone"></i> Call Us</a></div>
-  </div>
-</div>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add("visible"), i * 80);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
 
-<div class="modal-overlay" id="modal-opt3-3star-prem">
-  <div class="modal">
-    <div class="modal-header"><div><h2>Grand Premium — 3 Star Premium</h2><p>5 Nights / 6 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam (Overnight)</p></div><button class="modal-close" onclick="closeModal('modal-opt3-3star-prem')"><i class="fa fa-times"></i></button></div>
-    <div class="modal-body">
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">1</span></div><div class="itin-day-content"><h4>Arrival in Srinagar</h4><p>Arrive at Srinagar Airport. Shikara ride on Dal Lake. Mughal Gardens sightseeing. Overnight in premium hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">2</span></div><div class="itin-day-content"><h4>Srinagar → Sonamarg → Srinagar</h4><p>Full day Sonamarg. Glacier treks, pony rides. Return to Srinagar. Overnight in premium hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">3</span></div><div class="itin-day-content"><h4>Srinagar → Gulmarg → Srinagar</h4><p>Full day Gulmarg. Gondola ride option at own cost. Return to Srinagar. Overnight in premium hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Srinagar → Pahalgam</h4><p>Drive to Pahalgam. Betaab Valley, Chandanwari, Baisaran meadows. Overnight in premium Pahalgam hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Pahalgam → Srinagar</h4><p>Drive to Srinagar. Afternoon shopping. Overnight on premium houseboat.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">6</span></div><div class="itin-day-content"><h4>Departure</h4><p>Check out and transfer to airport.</p></div></div>
-      <div class="pricing-section"><h3>Pricing — 3 Star Premium Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹15,600</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹12,600</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹11,900</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹11,850</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹11,700</td></tr>
-        </tbody></table>
-        <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Srinagar: Midtown Greens / Heritage Luxury &nbsp;|&nbsp; Pahalgam: Hotel Lavish Residency / White Castle &nbsp;|&nbsp; Houseboat: Piano Group</p>
-      </div>
-    </div>
-    <div class="modal-footer"><a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%203%20Star%20Premium" class="btn-book" target="_blank" style="display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a><a href="tel:+917006675853" class="btn-view" style="display:inline-flex;align-items:center;gap:8px;"><i class="fa fa-phone"></i> Call Us</a></div>
-  </div>
-</div>
+      function scrollTo(id) {
+        document
+          .getElementById(id)
+          .scrollIntoView({ behavior: "smooth", block: "start" });
+        document
+          .querySelectorAll(".pkg-tab")
+          .forEach((t) => t.classList.remove("active"));
+        event.target.classList.add("active");
+      }
 
-<div class="modal-overlay" id="modal-opt3-4star">
-  <div class="modal">
-    <div class="modal-header"><div><h2>Grand Luxury — 4 Star</h2><p>5 Nights / 6 Days · Srinagar · Sonamarg · Gulmarg · Pahalgam (Overnight)</p></div><button class="modal-close" onclick="closeModal('modal-opt3-4star')"><i class="fa fa-times"></i></button></div>
-    <div class="modal-body">
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">1</span></div><div class="itin-day-content"><h4>Arrival in Srinagar</h4><p>Arrive at Srinagar Airport. Shikara ride. Mughal Gardens. Overnight in luxury 4-star hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">2</span></div><div class="itin-day-content"><h4>Srinagar → Sonamarg → Srinagar</h4><p>Full day Sonamarg excursion. Glacier walks, adventure activities. Return to Srinagar. Overnight in luxury hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">3</span></div><div class="itin-day-content"><h4>Srinagar → Gulmarg → Srinagar</h4><p>Full day Gulmarg. Gondola to 14,000 ft. Himalayan panorama. Return to Srinagar. Overnight in luxury hotel.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">4</span></div><div class="itin-day-content"><h4>Srinagar → Pahalgam</h4><p>Drive to Pahalgam. Betaab Valley, Chandanwari, Baisaran meadows. Overnight in luxury Pahalgam resort.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">5</span></div><div class="itin-day-content"><h4>Pahalgam → Srinagar</h4><p>Drive to Srinagar. Afternoon free for shopping. Overnight on luxury houseboat on Dal Lake.</p></div></div>
-      <div class="itin-day"><div class="itin-day-num"><span class="day-word">Day</span><span class="day-n">6</span></div><div class="itin-day-content"><h4>Departure</h4><p>After breakfast, check out and transfer to airport with beautiful memories of Kashmir.</p></div></div>
-      <div class="pricing-section"><h3>Pricing — 4 Star Hotels</h3>
-        <table class="pricing-table"><thead><tr><th>Total Pax</th><th>Vehicle</th><th>Price (per person)</th></tr></thead><tbody>
-          <tr><td>02 Pax</td><td>Etios</td><td class="price-highlight">₹22,400</td></tr>
-          <tr><td>04 Pax</td><td>Ertiga</td><td class="price-highlight">₹19,400</td></tr>
-          <tr><td>06 Pax</td><td>Innova</td><td class="price-highlight">₹18,700</td></tr>
-          <tr><td>08 Pax</td><td>Winger</td><td class="price-highlight">₹18,600</td></tr>
-          <tr><td>10 Pax</td><td>Tempo Traveller</td><td class="price-highlight">₹18,500</td></tr>
-        </tbody></table>
-        <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.75rem;">Srinagar: Hotel Downtown / Grand Kaiser / Rose Petal &nbsp;|&nbsp; Pahalgam: Chinar Resorts & Spa / Faiz Resorts &nbsp;|&nbsp; Houseboat: Young Alzira / Similar</p>
-      </div>
-    </div>
-    <div class="modal-footer"><a href="https://wa.me/917006675853?text=Hi%2C%20I%20want%20to%20book%20Option%203%20(5N%2F6D)%20-%204%20Star%20Luxury" class="btn-book" target="_blank" style="display:inline-flex;align-items:center;gap:8px;"><i class="fab fa-whatsapp"></i> Book on WhatsApp</a><a href="tel:+917006675853" class="btn-view" style="display:inline-flex;align-items:center;gap:8px;"><i class="fa fa-phone"></i> Call Us</a></div>
-  </div>
-</div>
+      function openModal(id) {
+        document.getElementById(id).classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+      function closeModal(id) {
+        document.getElementById(id).classList.remove("open");
+        document.body.style.overflow = "";
+      }
+      document.querySelectorAll(".modal-overlay").forEach((o) => {
+        o.addEventListener("click", (e) => {
+          if (e.target === o) {
+            o.classList.remove("open");
+            document.body.style.overflow = "";
+          }
+        });
+      });
 
-<script defer>
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 40); });
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) { setTimeout(() => entry.target.classList.add('visible'), i * 80); observer.unobserve(entry.target); }
-    });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  function scrollTo(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
-    document.querySelectorAll('.pkg-tab').forEach(t => t.classList.remove('active'));
-    event.target.classList.add('active');
-  }
-
-  function openModal(id) {
-    document.getElementById(id).classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeModal(id) {
-    document.getElementById(id).classList.remove('open');
-    document.body.style.overflow = '';
-  }
-  document.querySelectorAll('.modal-overlay').forEach(o => {
-    o.addEventListener('click', (e) => { if (e.target === o) { o.classList.remove('open'); document.body.style.overflow = ''; } });
-  });
-
-  function toggleMenu() {
-    const links = document.querySelector('.nav-links');
-    links.style.display = links.style.display === 'flex' ? '' : 'flex';
-    if (links.style.display === 'flex') links.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:white;padding:1.5rem 5%;box-shadow:var(--shadow-lg);gap:1rem;z-index:999;';
-  }
+      function toggleMenu() {
+        const links = document.querySelector(".nav-links");
+        links.style.display = links.style.display === "flex" ? "" : "flex";
+        if (links.style.display === "flex")
+          links.style.cssText =
+            "display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:white;padding:1.5rem 5%;box-shadow:var(--shadow-lg);gap:1rem;z-index:999;";
+      }
       document.addEventListener("click", function (e) {
-    const menu = document.querySelector(".nav-links");
-    const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".nav-links");
+        const hamburger = document.querySelector(".hamburger");
 
-    const isClickInsideMenu = menu.contains(e.target);
-    const isClickOnHamburger = hamburger.contains(e.target);
+        const isClickInsideMenu = menu.contains(e.target);
+        const isClickOnHamburger = hamburger.contains(e.target);
 
-    if (!isClickInsideMenu && !isClickOnHamburger) {
-      menu.style.display = "";
-    }
-  });
-</script>
-</body>
+        if (!isClickInsideMenu && !isClickOnHamburger) {
+          menu.style.display = "";
+        }
+      });
+    </script>
+  </body>
 </html>

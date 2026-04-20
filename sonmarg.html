@@ -19,32 +19,37 @@
   <body>
     <!-- NAVBAR -->
     <nav id="navbar">
-  <a href="index.html" class="nav-logo"><img src="./assets/images/VanityLogo.png" alt="The Vanity Journeys"></a>
-  <ul class="nav-links">
-    <li><a href="index.html#about">About</a></li>
-    <li class="nav-dropdown">
-      <a href="index.html#destinations">Destinations</a>
-      <div class="dropdown-menu">
-        <a href="srinagar.html">Srinagar</a><a href="gulmarg.html">Gulmarg</a><a href="pahalgam.html">Pahalgam</a>
-        <a href="#">Doodhpathri</a><a href="#">Sonmarg</a><a href="gurez.html">Gurez</a>
-        <a href="dallake.html">Dal Lake</a><a href="ladakh.html">Leh – Ladakh</a>
+      <a href="index.html" class="nav-logo"
+        ><img src="./assets/images/VanityLogo.png" alt="The Vanity Journeys"
+      /></a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li class="nav-dropdown">
+          <a href="index.html#destinations">Destinations</a>
+          <div class="dropdown-menu">
+            <a href="srinagar.html">Srinagar</a
+            ><a href="gulmarg.html">Gulmarg</a
+            ><a href="pahalgam.html">Pahalgam</a> <a href="#">Doodhpathri</a
+            ><a href="#">Sonmarg</a><a href="gurez.html">Gurez</a>
+            <a href="dallake.html">Dal Lake</a
+            ><a href="ladakh.html">Leh – Ladakh</a>
+          </div>
+        </li>
+        <li class="nav-dropdown">
+          <a href="packages.html">Packages</a>
+          <div class="dropdown-menu">
+            <a href="packages.html#option1">Kashmir 3N/4D</a>
+            <a href="packages.html#option2">Kashmir 4N/5D</a>
+            <a href="packages.html#option3">Kashmir 5N/6D</a>
+          </div>
+        </li>
+        <li><a href="index.html#faq">FAQs</a></li>
+        <li><a href="#cta" class="nav-cta">Book Now</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
       </div>
-    </li>
-    <li class="nav-dropdown">
-      <a href="packages.html">Packages</a>
-      <div class="dropdown-menu">
-        <a href="packages.html#option1">Kashmir 3N/4D</a>
-        <a href="packages.html#option2">Kashmir 4N/5D</a>
-        <a href="packages.html#option3">Kashmir 5N/6D</a>
-      </div>
-    </li>
-    <li><a href="index.html#faq">FAQs</a></li>
-    <li><a href="#cta" class="nav-cta">Book Now</a></li>
-  </ul>
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
+    </nav>
     <!-- ─── HERO ─── -->
     <div class="dest-hero">
       <div
@@ -56,7 +61,7 @@
               rgba(26, 61, 80, 0.25) 0%,
               rgba(26, 61, 80, 0.85) 100%
             ),
-            url('./assets/images/sonmarg/sonmarg1.webp') center/cover;
+            url(&quot;./assets/images/sonmarg/sonmarg1.webp&quot;) center/cover;
         "
       ></div>
       <div class="dest-hero-content">
@@ -206,34 +211,19 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item tall">
-          <img
-            src="./assets/images/sonmarg/sonmarg3.webp"
-            alt="Sonmarg"
-          />
+          <img src="./assets/images/sonmarg/sonmarg3.webp" alt="Sonmarg" />
         </div>
         <div class="gallery-item wide">
-           <img
-            src="./assets/images/sonmarg/sonmarg5.webp"
-            alt="Sonmarg"
-          />
+          <img src="./assets/images/sonmarg/sonmarg5.webp" alt="Sonmarg" />
         </div>
         <div class="gallery-item">
-          <img
-            src="./assets/images/sonmarg/sonmarg4.webp"
-            alt="Sonmarg"
-          />
+          <img src="./assets/images/sonmarg/sonmarg4.webp" alt="Sonmarg" />
         </div>
         <div class="gallery-item">
-           <img
-            src="./assets/images/sonmarg/sonmarg2.webp"
-            alt="Sonmarg"
-          />
+          <img src="./assets/images/sonmarg/sonmarg2.webp" alt="Sonmarg" />
         </div>
         <div class="gallery-item">
-          <img
-            src="./assets/images/sonmarg/sonmarg7.webp"
-            alt="Sonmarg"
-          />
+          <img src="./assets/images/sonmarg/sonmarg7.webp" alt="Sonmarg" />
         </div>
         <!-- <div class="gallery-item wide">
           <img
@@ -419,10 +409,7 @@
       </div>
       <div class="nearby-grid">
         <a href="dallake.html" class="nearby-card">
-          <img
-            src="./assets/images/dallake.jpg"
-            alt="Dal Lake"
-          />
+          <img src="./assets/images/dallake.jpg" alt="Dal Lake" />
           <div class="nearby-overlay">
             <div class="nearby-name">Dal Lake</div>
             <div class="nearby-tag">Srinagar · Houseboats · Shikaras</div>
@@ -430,13 +417,13 @@
           <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
         </a>
         <a href="ladakh.html" class="nearby-card">
-          <img
-            src="./assets/images/Ladakh/ladakh2.webp"
-            alt="Ladakh"
-          />
+          <img src="./assets/images/Ladakh/ladakh2.webp" alt="Ladakh" />
           <div class="nearby-overlay">
             <div class="nearby-name">Leh - Ladakh</div>
-            <div class="nearby-tag">The Enchanting Land of Mystical Landscapes — where the world's coldest desert meets Himalayan peaks and ancient Buddhist culture.</div>
+            <div class="nearby-tag">
+              The Enchanting Land of Mystical Landscapes — where the world's
+              coldest desert meets Himalayan peaks and ancient Buddhist culture.
+            </div>
           </div>
           <div class="nearby-arrow"><i class="fa fa-arrow-right"></i></div>
         </a>
@@ -522,13 +509,13 @@
         <div class="footer-col">
           <h4>Destinations</h4>
           <ul>
-            <li><a href="#">Srinagar</a></li>
-            <li><a href="#">Gulmarg</a></li>
-            <li><a href="#">Pahalgam</a></li>
+            <li><a href="srinagar.html">Srinagar</a></li>
+            <li><a href="gulmarg.html">Gulmarg</a></li>
+            <li><a href="pahalgam.html">Pahalgam</a></li>
             <li><a href="dallake.html">Dal Lake</a></li>
-            <li><a href="#">Sonmarg</a></li>
-            <li><a href="#">Gurez</a></li>
-            <li><a href="#">Doodhpathri</a></li>
+            <li><a href="sonmarg.html">Sonmarg</a></li>
+            <li><a href="gurez.html">Gurez</a></li>
+            <li><a href="doodhpathri.html">Doodhpathri</a></li>
             <li><a href="ladakh.html">Leh – Ladakh</a></li>
           </ul>
         </div>
@@ -587,17 +574,17 @@
             "display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:white;padding:1.5rem 5%;box-shadow:0 12px 48px rgba(44,95,122,0.18);gap:1rem;z-index:999;";
         }
       }
-          document.addEventListener("click", function (e) {
-    const menu = document.querySelector(".nav-links");
-    const hamburger = document.querySelector(".hamburger");
+      document.addEventListener("click", function (e) {
+        const menu = document.querySelector(".nav-links");
+        const hamburger = document.querySelector(".hamburger");
 
-    const isClickInsideMenu = menu.contains(e.target);
-    const isClickOnHamburger = hamburger.contains(e.target);
+        const isClickInsideMenu = menu.contains(e.target);
+        const isClickOnHamburger = hamburger.contains(e.target);
 
-    if (!isClickInsideMenu && !isClickOnHamburger) {
-      menu.style.display = "";
-    }
-  });
+        if (!isClickInsideMenu && !isClickOnHamburger) {
+          menu.style.display = "";
+        }
+      });
     </script>
   </body>
 </html>
