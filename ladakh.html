@@ -20,7 +20,7 @@
     <li class="nav-dropdown">
       <a href="index.html#destinations">Destinations</a>
       <div class="dropdown-menu">
-        <a href="#">Srinagar</a><a href="#">Gulmarg</a><a href="#">Pahalgam</a>
+        <a href="srinagar.html">Srinagar</a><a href="gulmarg.html">Gulmarg</a><a href="#">Pahalgam</a>
         <a href="#">Doodhpathri</a><a href="sonmarg.html">Sonmarg</a><a href="#">Gurez</a>
         <a href="dallake.html">Dal Lake</a><a href="#">Leh – Ladakh</a>
       </div>
@@ -368,6 +368,17 @@
       links.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:white;padding:1.5rem 5%;box-shadow:0 12px 48px rgba(44,95,122,0.18);gap:1rem;z-index:999;';
     }
   }
+      document.addEventListener("click", function (e) {
+    const menu = document.querySelector(".nav-links");
+    const hamburger = document.querySelector(".hamburger");
+
+    const isClickInsideMenu = menu.contains(e.target);
+    const isClickOnHamburger = hamburger.contains(e.target);
+
+    if (!isClickInsideMenu && !isClickOnHamburger) {
+      menu.style.display = "";
+    }
+  });
 </script>
 </body>
 </html>
