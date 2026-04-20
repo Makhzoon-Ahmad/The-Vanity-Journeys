@@ -35,6 +35,60 @@ body {
   background: var(--white);
   overflow-x: hidden;
 }
+ .license-strip {
+        position: fixed;
+        top: 90px; 
+        left: 0;
+        right: 0;
+        z-index: 998;
+        background: #0f1b22;
+        color: rgba(255,255,255,0.72);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 0.38rem 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .license-strip .license-dot {
+        opacity: 0.35;
+        font-size: 0.85rem;
+      }
+
+      .license-strip .license-num {
+        color: #e8b84b;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+
+      .license-strip i {
+        color: #e8b84b;
+        font-size: 0.65rem;
+      }
+
+      #hero {
+        padding-top: calc(72px + 30px); 
+      }
+
+      @media (max-width: 600px) {
+        .license-strip {
+          font-size: 0.58rem;
+          gap: 0.4rem;
+          padding: 0.32rem 0.5rem;
+        }
+        .license-strip span:last-child,
+        .license-strip .license-dot:last-of-type {
+          display: none;
+        }
+      }
 
 /* ─── NAVBAR ─── */
 nav {
